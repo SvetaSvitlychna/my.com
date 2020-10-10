@@ -1,0 +1,103 @@
+.category{
+    display:flex;
+}
+.category-item{
+    display: inline-grid;
+    color:rgb(41, 13, 196);
+    transition: all 0.3s;
+    padding: 10px;
+    /* margin: 10px; */
+    text-decoration: none;
+}
+
+.category-item img{
+    transition: all 0.3s;
+}
+
+.category-item-title {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    background: rgb(243, 165, 76);
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    position: relative;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.07);
+    font-size: 0.8rem;
+}
+  
+.category-item:hover img {
+    opacity: 0.7;
+}
+.category-item-title:hover{
+    color: #6c757d;
+
+}
+/* сделать все изображения серыми на 40% */
+.newproduct img {
+    filter: grayscale(40%);
+    transition: all 0.3s;
+}
+  
+.product-overlay {
+    width: 100%;
+    position: inherit;
+    display: inline-flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 0rem 0;
+    opacity: 0;
+    transition: all 0.3s;
+    z-index:1;
+}
+.product-overlay .active{
+    display:block;
+    opacity:1;
+
+}
+  
+.product-overlay ul li {
+    transition: all 0.3s;
+}
+  
+.product-overlay ul li:first-of-type {
+    transform: translateX(-10px);
+    opacity: 0;
+}
+  
+.product-overlay ul li:last-of-type {
+    transform: translateX(10px);
+    opacity: 0;
+}
+  
+.newproduct:hover img {
+    opacity: 0.3;
+}
+  
+.newproduct:hover .product-overlay {
+    opacity: 1;
+}
+  
+.newproduct:hover .product-overlay li {
+    opacity: 1;
+    transform: none;
+}
+  
+.newproduct .badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 999;
+}
+
+.reset-anchor {
+    color: inherit;
+    transition: all 0.3s;
+}
+  
+.reset-anchor:hover, .reset-anchor:focus {
+    text-decoration: none;
+}

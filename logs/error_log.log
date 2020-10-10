@@ -1,0 +1,215 @@
+[28-Sep-2020 16:18:12 Europe/Kiev] hello logs
+[28-Sep-2020 16:05:06 Europe/Berlin] PHP Notice:  Undefined variable: title in C:\xampp\htdocs\my.com\app\Views\home\index.php on line 1
+[28-Sep-2020 16:05:51 Europe/Berlin] PHP Notice:  Undefined variable: title in C:\xampp\htdocs\my.com\app\Views\home\index.php on line 1
+[28-Sep-2020 16:10:29 Europe/Berlin] PHP Warning:  require_once(C:\xampp\htdocs\my.com/app/Views/layouts/partials/_head.php): failed to open stream: No such file or directory in C:\xampp\htdocs\my.com\app\Views\layouts\app.php on line 7
+[28-Sep-2020 16:10:29 Europe/Berlin] PHP Fatal error:  require_once(): Failed opening required 'C:\xampp\htdocs\my.com/app/Views/layouts/partials/_head.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\my.com\app\Views\layouts\app.php on line 7
+[28-Sep-2020 16:13:34 Europe/Berlin] PHP Warning:  require_once(C:\xampp\htdocs\my.com/app/Views/layouts/partials/_head.php): failed to open stream: No such file or directory in C:\xampp\htdocs\my.com\app\Views\layouts\app.php on line 7
+[28-Sep-2020 16:13:34 Europe/Berlin] PHP Fatal error:  require_once(): Failed opening required 'C:\xampp\htdocs\my.com/app/Views/layouts/partials/_head.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\my.com\app\Views\layouts\app.php on line 7
+[28-Sep-2020 16:15:51 Europe/Berlin] PHP Warning:  require_once(C:\xampp\htdocs\my.com/app/Views/layouts/partials/_head.php): failed to open stream: No such file or directory in C:\xampp\htdocs\my.com\app\Views\layouts\app.php on line 7
+[28-Sep-2020 16:15:51 Europe/Berlin] PHP Fatal error:  require_once(): Failed opening required 'C:\xampp\htdocs\my.com/app/Views/layouts/partials/_head.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\my.com\app\Views\layouts\app.php on line 7
+[28-Sep-2020 16:15:56 Europe/Berlin] PHP Warning:  require_once(C:\xampp\htdocs\my.com/app/Views/layouts/partials/_head.php): failed to open stream: No such file or directory in C:\xampp\htdocs\my.com\app\Views\layouts\app.php on line 7
+[28-Sep-2020 16:15:56 Europe/Berlin] PHP Fatal error:  require_once(): Failed opening required 'C:\xampp\htdocs\my.com/app/Views/layouts/partials/_head.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\my.com\app\Views\layouts\app.php on line 7
+[28-Sep-2020 16:16:02 Europe/Berlin] PHP Warning:  require_once(C:\xampp\htdocs\my.com/app/Views/layouts/partials/_head.php): failed to open stream: No such file or directory in C:\xampp\htdocs\my.com\app\Views\layouts\app.php on line 7
+[28-Sep-2020 16:16:02 Europe/Berlin] PHP Fatal error:  require_once(): Failed opening required 'C:\xampp\htdocs\my.com/app/Views/layouts/partials/_head.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\my.com\app\Views\layouts\app.php on line 7
+[28-Sep-2020 16:18:15 Europe/Berlin] PHP Warning:  require_once(C:\xampp\htdocs\my.com/app/Views/layouts/partials/_head.php): failed to open stream: No such file or directory in C:\xampp\htdocs\my.com\app\Views\layouts\app.php on line 7
+[28-Sep-2020 16:18:15 Europe/Berlin] PHP Fatal error:  require_once(): Failed opening required 'C:\xampp\htdocs\my.com/app/Views/layouts/partials/_head.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\my.com\app\Views\layouts\app.php on line 7
+[09-Oct-2020 13:29:49 Europe/Kiev] PHP Parse error:  syntax error, unexpected end of file in C:\xampp\htdocs\my.com\app\Controllers\ContactController.php on line 66
+[09-Oct-2020 13:31:22 Europe/Kiev] PHP Notice:  Undefined variable: errors in C:\xampp\htdocs\my.com\app\Views\contact\index.php on line 8
+[09-Oct-2020 13:31:22 Europe/Kiev] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in C:\xampp\htdocs\my.com\app\Views\contact\index.php on line 8
+[09-Oct-2020 13:35:48 Europe/Kiev] PHP Notice:  Undefined variable: errors in C:\xampp\htdocs\my.com\app\Views\contact\index.php on line 8
+[09-Oct-2020 13:35:48 Europe/Kiev] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in C:\xampp\htdocs\my.com\app\Views\contact\index.php on line 8
+[09-Oct-2020 13:37:05 Europe/Kiev] PHP Notice:  Undefined variable: message in C:\xampp\htdocs\my.com\app\Controllers\ContactController.php on line 54
+[09-Oct-2020 13:37:05 Europe/Kiev] PHP Notice:  Undefined variable: errors in C:\xampp\htdocs\my.com\app\Views\contact\index.php on line 8
+[09-Oct-2020 13:37:05 Europe/Kiev] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in C:\xampp\htdocs\my.com\app\Views\contact\index.php on line 8
+[09-Oct-2020 13:54:51 Europe/Kiev] PHP Notice:  Undefined variable: message in C:\xampp\htdocs\my.com\app\Controllers\ContactController.php on line 54
+[09-Oct-2020 13:54:51 Europe/Kiev] PHP Notice:  Undefined variable: errors in C:\xampp\htdocs\my.com\app\Views\contact\index.php on line 8
+[09-Oct-2020 13:54:51 Europe/Kiev] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in C:\xampp\htdocs\my.com\app\Views\contact\index.php on line 8
+[09-Oct-2020 13:55:06 Europe/Kiev] PHP Notice:  Undefined variable: message in C:\xampp\htdocs\my.com\app\Controllers\ContactController.php on line 54
+[09-Oct-2020 13:55:06 Europe/Kiev] PHP Notice:  Undefined variable: errors in C:\xampp\htdocs\my.com\app\Views\contact\index.php on line 8
+[09-Oct-2020 13:55:06 Europe/Kiev] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in C:\xampp\htdocs\my.com\app\Views\contact\index.php on line 8
+[09-Oct-2020 13:55:32 Europe/Kiev] PHP Notice:  Undefined variable: message in C:\xampp\htdocs\my.com\app\Controllers\ContactController.php on line 54
+[09-Oct-2020 13:55:32 Europe/Kiev] PHP Notice:  Undefined variable: errors in C:\xampp\htdocs\my.com\app\Views\contact\index.php on line 8
+[09-Oct-2020 13:55:32 Europe/Kiev] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in C:\xampp\htdocs\my.com\app\Views\contact\index.php on line 8
+[09-Oct-2020 14:00:41 Europe/Kiev] PHP Notice:  Undefined variable: message in C:\xampp\htdocs\my.com\app\Controllers\ContactController.php on line 54
+[09-Oct-2020 14:00:41 Europe/Kiev] PHP Notice:  Undefined variable: errors in C:\xampp\htdocs\my.com\app\Views\contact\index.php on line 8
+[09-Oct-2020 14:00:41 Europe/Kiev] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in C:\xampp\htdocs\my.com\app\Views\contact\index.php on line 8
+[09-Oct-2020 14:01:20 Europe/Kiev] PHP Notice:  Undefined variable: errors in C:\xampp\htdocs\my.com\app\Views\contact\index.php on line 8
+[09-Oct-2020 14:01:20 Europe/Kiev] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in C:\xampp\htdocs\my.com\app\Views\contact\index.php on line 8
+[09-Oct-2020 14:01:41 Europe/Kiev] PHP Notice:  Undefined variable: errors in C:\xampp\htdocs\my.com\app\Views\contact\index.php on line 8
+[09-Oct-2020 14:01:41 Europe/Kiev] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in C:\xampp\htdocs\my.com\app\Views\contact\index.php on line 8
+[09-Oct-2020 14:10:46 Europe/Kiev] PHP Notice:  Undefined variable: message in C:\xampp\htdocs\my.com\app\Controllers\ContactController.php on line 54
+[09-Oct-2020 14:15:41 Europe/Kiev] PHP Notice:  Undefined variable: feedback_msg in C:\xampp\htdocs\my.com\app\Views\contact\index.php on line 10
+[09-Oct-2020 14:43:49 Europe/Kiev] PHP Fatal error:  Cannot use [] for reading in C:\xampp\htdocs\my.com\app\Controllers\ContactController.php on line 64
+[09-Oct-2020 14:49:37 Europe/Kiev] PHP Notice:  Array to string conversion in C:\xampp\htdocs\my.com\app\Views\contact\index.php on line 16
+[09-Oct-2020 14:51:23 Europe/Kiev] PHP Notice:  Array to string conversion in C:\xampp\htdocs\my.com\app\Views\contact\index.php on line 16
+[09-Oct-2020 14:57:46 Europe/Kiev] PHP Notice:  Array to string conversion in C:\xampp\htdocs\my.com\app\Views\contact\index.php on line 16
+[09-Oct-2020 15:03:31 Europe/Kiev] PHP Parse error:  syntax error, unexpected '}', expecting end of file in C:\xampp\htdocs\my.com\app\Views\contact\index.php on line 21
+[09-Oct-2020 15:04:06 Europe/Kiev] PHP Notice:  Array to string conversion in C:\xampp\htdocs\my.com\app\Views\contact\index.php on line 17
+[09-Oct-2020 15:05:44 Europe/Kiev] PHP Notice:  Array to string conversion in C:\xampp\htdocs\my.com\app\Views\contact\index.php on line 19
+[09-Oct-2020 15:06:20 Europe/Kiev] PHP Notice:  Array to string conversion in C:\xampp\htdocs\my.com\app\Views\contact\index.php on line 19
+[09-Oct-2020 15:15:04 Europe/Kiev] PHP Notice:  Array to string conversion in C:\xampp\htdocs\my.com\app\Views\contact\index.php on line 19
+[09-Oct-2020 17:39:37 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to undefined function file_exist() in C:\xampp\htdocs\my.com\app\Views\contact\index.php:52
+Stack trace:
+#0 C:\xampp\htdocs\my.com\app\Views\layouts\app.php(15): include_once()
+#1 C:\xampp\htdocs\my.com\bootstrap\app.php(45): include_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\my.com\app\Controllers\ContactController.php(64): render('contact/index.p...', Array)
+#3 C:\xampp\htdocs\my.com\bootstrap\app.php(58): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\my.com\app\Views\contact\index.php on line 52
+[09-Oct-2020 17:44:06 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to undefined function file_exist() in C:\xampp\htdocs\my.com\app\Views\contact\index.php:50
+Stack trace:
+#0 C:\xampp\htdocs\my.com\app\Views\layouts\app.php(15): include_once()
+#1 C:\xampp\htdocs\my.com\bootstrap\app.php(45): include_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\my.com\app\Controllers\ContactController.php(64): render('contact/index.p...', Array)
+#3 C:\xampp\htdocs\my.com\bootstrap\app.php(58): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\my.com\app\Views\contact\index.php on line 50
+[09-Oct-2020 17:46:40 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to undefined function file_exist() in C:\xampp\htdocs\my.com\app\Views\contact\index.php:50
+Stack trace:
+#0 C:\xampp\htdocs\my.com\app\Views\layouts\app.php(15): include_once()
+#1 C:\xampp\htdocs\my.com\bootstrap\app.php(45): include_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\my.com\app\Controllers\ContactController.php(64): render('contact/index.p...', Array)
+#3 C:\xampp\htdocs\my.com\bootstrap\app.php(58): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\my.com\app\Views\contact\index.php on line 50
+[09-Oct-2020 17:50:56 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to undefined function file_exist() in C:\xampp\htdocs\my.com\app\Views\contact\index.php:50
+Stack trace:
+#0 C:\xampp\htdocs\my.com\app\Views\layouts\app.php(15): include_once()
+#1 C:\xampp\htdocs\my.com\bootstrap\app.php(45): include_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\my.com\app\Controllers\ContactController.php(64): render('contact/index.p...', Array)
+#3 C:\xampp\htdocs\my.com\bootstrap\app.php(58): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\my.com\app\Views\contact\index.php on line 50
+[09-Oct-2020 17:52:07 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to undefined function file_exist() in C:\xampp\htdocs\my.com\app\Views\contact\index.php:50
+Stack trace:
+#0 C:\xampp\htdocs\my.com\app\Views\layouts\app.php(15): include_once()
+#1 C:\xampp\htdocs\my.com\bootstrap\app.php(45): include_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\my.com\app\Controllers\ContactController.php(64): render('contact/index.p...', Array)
+#3 C:\xampp\htdocs\my.com\bootstrap\app.php(58): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\my.com\app\Views\contact\index.php on line 50
+[09-Oct-2020 17:54:25 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to undefined function file_exist() in C:\xampp\htdocs\my.com\app\Views\contact\index.php:52
+Stack trace:
+#0 C:\xampp\htdocs\my.com\app\Views\layouts\app.php(15): include_once()
+#1 C:\xampp\htdocs\my.com\bootstrap\app.php(45): include_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\my.com\app\Controllers\ContactController.php(64): render('contact/index.p...', Array)
+#3 C:\xampp\htdocs\my.com\bootstrap\app.php(58): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\my.com\app\Views\contact\index.php on line 52
+[09-Oct-2020 18:12:39 Europe/Kiev] PHP Parse error:  syntax error, unexpected '<', expecting end of file in C:\xampp\htdocs\my.com\app\Views\contact\index.php on line 56
+[09-Oct-2020 18:13:15 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to undefined function file_exist() in C:\xampp\htdocs\my.com\app\Views\contact\index.php:52
+Stack trace:
+#0 C:\xampp\htdocs\my.com\app\Views\layouts\app.php(15): include_once()
+#1 C:\xampp\htdocs\my.com\bootstrap\app.php(45): include_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\my.com\app\Controllers\ContactController.php(64): render('contact/index.p...', Array)
+#3 C:\xampp\htdocs\my.com\bootstrap\app.php(58): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\my.com\app\Views\contact\index.php on line 52
+[09-Oct-2020 22:36:38 Europe/Kiev] PHP Warning:  fopen(C:\xampp\htdocs\my.com/config/contacts.txt): failed to open stream: No such file or directory in C:\xampp\htdocs\my.com\app\Views\contact\index.php on line 54
+[09-Oct-2020 23:38:36 Europe/Kiev] PHP Parse error:  syntax error, unexpected ')', expecting '[' in C:\xampp\htdocs\my.com\app\Views\contact\index.php on line 53
+[09-Oct-2020 23:39:33 Europe/Kiev] PHP Parse error:  syntax error, unexpected end of file in C:\xampp\htdocs\my.com\app\Views\contact\index.php on line 77
+[09-Oct-2020 23:40:12 Europe/Kiev] PHP Parse error:  syntax error, unexpected end of file in C:\xampp\htdocs\my.com\app\Views\contact\index.php on line 66
+[09-Oct-2020 23:41:41 Europe/Kiev] PHP Parse error:  syntax error, unexpected end of file in C:\xampp\htdocs\my.com\app\Views\contact\index.php on line 66
+[09-Oct-2020 23:44:22 Europe/Kiev] PHP Parse error:  syntax error, unexpected end of file in C:\xampp\htdocs\my.com\app\Views\contact\index.php on line 65
+[09-Oct-2020 23:45:28 Europe/Kiev] PHP Parse error:  syntax error, unexpected '{', expecting '(' in C:\xampp\htdocs\my.com\app\Views\contact\index.php on line 52
+[09-Oct-2020 23:47:35 Europe/Kiev] PHP Parse error:  syntax error, unexpected end of file in C:\xampp\htdocs\my.com\app\Views\contact\index.php on line 65
+[09-Oct-2020 23:49:49 Europe/Kiev] PHP Warning:  file_get_contents(C:\xampp\htdocs\my.com/config/contacts.json): failed to open stream: No such file or directory in C:\xampp\htdocs\my.com\bootstrap\app.php on line 43
+[09-Oct-2020 23:49:49 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'Exeption' not found in C:\xampp\htdocs\my.com\bootstrap\app.php:45
+Stack trace:
+#0 C:\xampp\htdocs\my.com\app\Controllers\ContactController.php(61): conf('contacts')
+#1 C:\xampp\htdocs\my.com\bootstrap\app.php(71): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\my.com\bootstrap\app.php on line 45
+[09-Oct-2020 23:54:16 Europe/Kiev] PHP Warning:  file_get_contents(C:\xampp\htdocs\my.com/config/contacts.json): failed to open stream: No such file or directory in C:\xampp\htdocs\my.com\bootstrap\app.php on line 43
+[09-Oct-2020 23:54:16 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'Exeption' not found in C:\xampp\htdocs\my.com\bootstrap\app.php:45
+Stack trace:
+#0 C:\xampp\htdocs\my.com\app\Controllers\ContactController.php(61): conf('contacts')
+#1 C:\xampp\htdocs\my.com\bootstrap\app.php(71): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\my.com\bootstrap\app.php on line 45
+[10-Oct-2020 10:37:41 Europe/Kiev] PHP Warning:  file_get_contents(C:\xampp\htdocs\my.com/config/contacts.json): failed to open stream: No such file or directory in C:\xampp\htdocs\my.com\bootstrap\app.php on line 43
+[10-Oct-2020 10:37:41 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'Exeption' not found in C:\xampp\htdocs\my.com\bootstrap\app.php:45
+Stack trace:
+#0 C:\xampp\htdocs\my.com\app\Controllers\ContactController.php(61): conf('contacts')
+#1 C:\xampp\htdocs\my.com\bootstrap\app.php(71): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\my.com\bootstrap\app.php on line 45
+[10-Oct-2020 10:50:42 Europe/Kiev] PHP Warning:  file_get_contents(C:\xampp\htdocs\my.com/config/contacts.json): failed to open stream: No such file or directory in C:\xampp\htdocs\my.com\bootstrap\app.php on line 43
+[10-Oct-2020 10:50:42 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'Exeption' not found in C:\xampp\htdocs\my.com\bootstrap\app.php:45
+Stack trace:
+#0 C:\xampp\htdocs\my.com\app\Controllers\ContactController.php(61): conf('contacts')
+#1 C:\xampp\htdocs\my.com\bootstrap\app.php(71): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\my.com\bootstrap\app.php on line 45
+[10-Oct-2020 10:51:59 Europe/Kiev] PHP Warning:  file_get_contents(C:\xampp\htdocs\my.com/config/contacts.json): failed to open stream: No such file or directory in C:\xampp\htdocs\my.com\bootstrap\app.php on line 43
+[10-Oct-2020 10:51:59 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'Exeption' not found in C:\xampp\htdocs\my.com\bootstrap\app.php:45
+Stack trace:
+#0 C:\xampp\htdocs\my.com\app\Controllers\ContactController.php(61): conf('contacts')
+#1 C:\xampp\htdocs\my.com\bootstrap\app.php(71): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\my.com\bootstrap\app.php on line 45
+[10-Oct-2020 10:56:36 Europe/Kiev] PHP Parse error:  syntax error, unexpected ';', expecting ')' in C:\xampp\htdocs\my.com\app\Controllers\ContactController.php on line 65
+[10-Oct-2020 10:57:24 Europe/Kiev] PHP Warning:  file_get_contents(C:\xampp\htdocs\my.com/config/contacts.json): failed to open stream: No such file or directory in C:\xampp\htdocs\my.com\bootstrap\app.php on line 43
+[10-Oct-2020 10:57:24 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'Exeption' not found in C:\xampp\htdocs\my.com\bootstrap\app.php:45
+Stack trace:
+#0 C:\xampp\htdocs\my.com\app\Controllers\ContactController.php(61): conf('contacts')
+#1 C:\xampp\htdocs\my.com\bootstrap\app.php(72): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\my.com\bootstrap\app.php on line 45
+[10-Oct-2020 11:01:08 Europe/Kiev] PHP Parse error:  syntax error, unexpected end of file in C:\xampp\htdocs\my.com\app\Views\contact\index.php on line 65
+[10-Oct-2020 11:02:19 Europe/Kiev] PHP Parse error:  syntax error, unexpected end of file in C:\xampp\htdocs\my.com\app\Views\contact\index.php on line 65
+[10-Oct-2020 11:05:54 Europe/Kiev] PHP Parse error:  syntax error, unexpected end of file in C:\xampp\htdocs\my.com\app\Views\contact\index.php on line 65
+[10-Oct-2020 11:09:12 Europe/Kiev] PHP Parse error:  syntax error, unexpected end of file in C:\xampp\htdocs\my.com\app\Views\contact\index.php on line 64
+[10-Oct-2020 11:10:39 Europe/Kiev] PHP Parse error:  syntax error, unexpected end of file in C:\xampp\htdocs\my.com\app\Views\contact\index.php on line 64
+[10-Oct-2020 19:13:32 Europe/Kiev] PHP Notice:  Undefined index: name in C:\xampp\htdocs\my.com\app\Views\contact\index.php on line 72
+[10-Oct-2020 19:13:32 Europe/Kiev] PHP Notice:  Undefined index: name in C:\xampp\htdocs\my.com\app\Views\contact\index.php on line 72
+[10-Oct-2020 20:47:16 Europe/Kiev] PHP Warning:  require_once(C:\xampp\htdocs\my.com/core/Router.php): failed to open stream: No such file or directory in C:\xampp\htdocs\my.com\bootstrap\app.php on line 90
+[10-Oct-2020 20:47:16 Europe/Kiev] PHP Fatal error:  require_once(): Failed opening required 'C:\xampp\htdocs\my.com/core/Router.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\my.com\bootstrap\app.php on line 90
+[10-Oct-2020 20:54:16 Europe/Kiev] PHP Warning:  require_once(C:\xampp\htdocs\my.com/core/Router.php): failed to open stream: No such file or directory in C:\xampp\htdocs\my.com\bootstrap\app.php on line 90
+[10-Oct-2020 20:54:16 Europe/Kiev] PHP Fatal error:  require_once(): Failed opening required 'C:\xampp\htdocs\my.com/core/Router.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\my.com\bootstrap\app.php on line 90
+[10-Oct-2020 20:56:46 Europe/Kiev] PHP Warning:  require_once(C:\xampp\htdocs\my.com/core/Router.php): failed to open stream: No such file or directory in C:\xampp\htdocs\my.com\bootstrap\app.php on line 58
+[10-Oct-2020 20:56:46 Europe/Kiev] PHP Fatal error:  require_once(): Failed opening required 'C:\xampp\htdocs\my.com/core/Router.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\my.com\bootstrap\app.php on line 58
+[10-Oct-2020 21:04:11 Europe/Kiev] PHP Warning:  require_once(C:\xampp\htdocs\my.com/core/Router.php): failed to open stream: No such file or directory in C:\xampp\htdocs\my.com\bootstrap\app.php on line 58
+[10-Oct-2020 21:04:11 Europe/Kiev] PHP Fatal error:  require_once(): Failed opening required 'C:\xampp\htdocs\my.com/core/Router.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\my.com\bootstrap\app.php on line 58
+[10-Oct-2020 21:05:17 Europe/Kiev] PHP Warning:  require_once(C:\xampp\htdocs\my.com/core/Router.php): failed to open stream: No such file or directory in C:\xampp\htdocs\my.com\bootstrap\app.php on line 58
+[10-Oct-2020 21:05:17 Europe/Kiev] PHP Fatal error:  require_once(): Failed opening required 'C:\xampp\htdocs\my.com/core/Router.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\my.com\bootstrap\app.php on line 58
+[10-Oct-2020 21:10:38 Europe/Kiev] PHP Warning:  require_once(C:\xampp\htdocs\my.com/core/Router.php): failed to open stream: No such file or directory in C:\xampp\htdocs\my.com\bootstrap\app.php on line 58
+[10-Oct-2020 21:10:38 Europe/Kiev] PHP Fatal error:  require_once(): Failed opening required 'C:\xampp\htdocs\my.com/core/Router.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\my.com\bootstrap\app.php on line 58
+[10-Oct-2020 21:10:48 Europe/Kiev] PHP Warning:  require_once(C:\xampp\htdocs\my.com/core/Router.php): failed to open stream: No such file or directory in C:\xampp\htdocs\my.com\bootstrap\app.php on line 58
+[10-Oct-2020 21:10:48 Europe/Kiev] PHP Fatal error:  require_once(): Failed opening required 'C:\xampp\htdocs\my.com/core/Router.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\my.com\bootstrap\app.php on line 58
+[10-Oct-2020 21:18:46 Europe/Kiev] PHP Warning:  require_once(C:\xampp\htdocs\my.com/core/Router.php): failed to open stream: No such file or directory in C:\xampp\htdocs\my.com\bootstrap\app.php on line 58
+[10-Oct-2020 21:18:46 Europe/Kiev] PHP Fatal error:  require_once(): Failed opening required 'C:\xampp\htdocs\my.com/core/Router.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\my.com\bootstrap\app.php on line 58
+[10-Oct-2020 21:21:27 Europe/Kiev] PHP Warning:  require_once(C:\xampp\htdocs\my.com/core/Router.php): failed to open stream: No such file or directory in C:\xampp\htdocs\my.com\bootstrap\app.php on line 58
+[10-Oct-2020 21:21:27 Europe/Kiev] PHP Fatal error:  require_once(): Failed opening required 'C:\xampp\htdocs\my.com/core/Router.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\my.com\bootstrap\app.php on line 58
+[10-Oct-2020 21:23:06 Europe/Kiev] PHP Warning:  require_once(C:\xampp\htdocs\my.com/core/Router.php): failed to open stream: No such file or directory in C:\xampp\htdocs\my.com\bootstrap\app.php on line 58
+[10-Oct-2020 21:23:06 Europe/Kiev] PHP Fatal error:  require_once(): Failed opening required 'C:\xampp\htdocs\my.com/core/Router.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\my.com\bootstrap\app.php on line 58
+[10-Oct-2020 21:26:12 Europe/Kiev] PHP Warning:  require_once(C:\xampp\htdocs\my.com/core/Router.php): failed to open stream: No such file or directory in C:\xampp\htdocs\my.com\bootstrap\app.php on line 60
+[10-Oct-2020 21:26:12 Europe/Kiev] PHP Fatal error:  require_once(): Failed opening required 'C:\xampp\htdocs\my.com/core/Router.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\my.com\bootstrap\app.php on line 60
+[10-Oct-2020 21:27:17 Europe/Kiev] PHP Warning:  require_once(C:\xampp\htdocs\my.com/core/Router.php): failed to open stream: No such file or directory in C:\xampp\htdocs\my.com\bootstrap\app.php on line 58
+[10-Oct-2020 21:27:17 Europe/Kiev] PHP Fatal error:  require_once(): Failed opening required 'C:\xampp\htdocs\my.com/core/Router.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\my.com\bootstrap\app.php on line 58
+[10-Oct-2020 21:40:16 Europe/Kiev] PHP Warning:  require_once(C:\xampp\htdocs\my.com/core/Router.php): failed to open stream: No such file or directory in C:\xampp\htdocs\my.com\bootstrap\app.php on line 58
+[10-Oct-2020 21:40:16 Europe/Kiev] PHP Fatal error:  require_once(): Failed opening required 'C:\xampp\htdocs\my.com/core/Router.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\my.com\bootstrap\app.php on line 58
+[10-Oct-2020 21:44:08 Europe/Kiev] PHP Warning:  require_once(C:\xampp\htdocs\my.com/core/Router.php): failed to open stream: No such file or directory in C:\xampp\htdocs\my.com\bootstrap\app.php on line 58
+[10-Oct-2020 21:44:08 Europe/Kiev] PHP Fatal error:  require_once(): Failed opening required 'C:\xampp\htdocs\my.com/core/Router.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\my.com\bootstrap\app.php on line 58
+[10-Oct-2020 21:44:45 Europe/Kiev] PHP Warning:  require_once(C:\xampp\htdocs\my.com/core/Router.php): failed to open stream: No such file or directory in C:\xampp\htdocs\my.com\bootstrap\app.php on line 58
+[10-Oct-2020 21:44:45 Europe/Kiev] PHP Fatal error:  require_once(): Failed opening required 'C:\xampp\htdocs\my.com/core/Router.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\my.com\bootstrap\app.php on line 58
+[10-Oct-2020 21:45:11 Europe/Kiev] PHP Warning:  require_once(C:\xampp\htdocs\my.com/core/Router.php): failed to open stream: No such file or directory in C:\xampp\htdocs\my.com\bootstrap\app.php on line 58
+[10-Oct-2020 21:45:11 Europe/Kiev] PHP Fatal error:  require_once(): Failed opening required 'C:\xampp\htdocs\my.com/core/Router.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\my.com\bootstrap\app.php on line 58
+[10-Oct-2020 21:47:36 Europe/Kiev] PHP Warning:  require_once(C:\xampp\htdocs\my.com/core/Router.php): failed to open stream: No such file or directory in C:\xampp\htdocs\my.com\bootstrap\app.php on line 58
+[10-Oct-2020 21:47:36 Europe/Kiev] PHP Fatal error:  require_once(): Failed opening required 'C:\xampp\htdocs\my.com/core/Router.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\my.com\bootstrap\app.php on line 58
+[10-Oct-2020 21:48:00 Europe/Kiev] PHP Warning:  Use of undefined constant CORE - assumed 'CORE' (this will throw an Error in a future version of PHP) in C:\xampp\htdocs\my.com\bootstrap\app.php on line 58
+[10-Oct-2020 21:48:00 Europe/Kiev] PHP Warning:  require_once(CORE/Router.php): failed to open stream: No such file or directory in C:\xampp\htdocs\my.com\bootstrap\app.php on line 58
+[10-Oct-2020 21:48:00 Europe/Kiev] PHP Fatal error:  require_once(): Failed opening required 'CORE/Router.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\my.com\bootstrap\app.php on line 58
