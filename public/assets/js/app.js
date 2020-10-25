@@ -280,17 +280,17 @@ renderCategory(){
             const categories = document.querySelector('.categories');
         if (categories){
             categories.addEventListener('click',event=>{
- event.preventDefault();
+       event.preventDefault();
        const target = event.target; 
        if (target.classList.contains('category-item')) {
             const category = target.dataset.category;
             console.log(category);
             const categoryFilter = items => items.filter(item => item.category.includes(category));
           console.log(categoryFilter);
-            this.makeShowcase(categoryFilter(Storage.getProducts())); 
+            this.makeShowCase(categoryFilter(Storage.getProducts())); 
             
         } else {
-            this.makeShowcase(Storage.getProducts());
+            this.makeShowCase(Storage.getProducts());
         }
         this.addToCart();
         this.renderCart();                  
@@ -345,7 +345,7 @@ function navbarNav(className, url, icon, capture=''){
 
 document.querySelector('.navbar-nav').innerHTML =
 `${navbarNav('', '/', 'fa-home', 'Home')}
-${navbarNav('','/aboutUs','fa-book-open', 'About' )}
+${navbarNav('','/about','fa-book-open', 'About' )}
 ${navbarNav('','/catalog', 'fa-blog','Catalog')}
 ${navbarNav('','/SignUp', 'fa-address-card','Sign up')}`;
 

@@ -1,5 +1,5 @@
 <div class="overlay-form">
-    <div class="container-form">  
+    <div class="table-responsive">  
             <div class="title">
                 <i class="fa fa-envelope"></i> <?php echo $title; ?>
             </div> 

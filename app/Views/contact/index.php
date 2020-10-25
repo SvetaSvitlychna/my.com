@@ -6,7 +6,7 @@
         <div class="row-form">
            
             <div class="col-lg-6">
-                <form method="POST" action="" >
+                <form method="POST" action="/store" >
                     <h2 >Please, fill in the form and we will contact you!</h2>
                     <?php
                         if ($_POST) {

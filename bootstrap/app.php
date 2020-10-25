@@ -1,15 +1,7 @@
 <?php
 
-
-
 require_once realpath (__DIR__.'/../config/app.php');
- //var_dump(realpath(APP));
  
-
-//var_dump(date_default_timezone_get());
-//  date_default_timezone_set('Europe/Kiev');
-
-//var_dump(ini_get('display_errors'));
 function setLogging(){
     if (APP_ENV =='local'){
     ini_set('display_startup_errors', 1);
@@ -28,10 +20,8 @@ function initApp(){
   }
 initApp();
 setLogging();
-//error_log('hello logs');
 
 
-// echo getURI();
 
 function conf ($mix){
     $url = CONFIG."/".$mix.".json";
@@ -47,43 +37,8 @@ function conf ($mix){
     }
 }
 
-function render($template, $data=null){
-    if ($data){
-        extract($data);
-    }
-    $template .='.php';
-    include_once VIEWS.'/layouts/app.php';
-}
 
+require_once CORE.'/Request.php';
 require_once CORE.'/Router.php';
 
-
-// switch (getURI()) {
-//     case '':
-//     require_once CONTROLLERS.'/HomeController.php';
-//     break;
-//     case 'about':
-//     require_once CONTROLLERS.'/AboutController.php';
-//     break;
-//     case 'contact':
-//     require_once CONTROLLERS.'/ContactController.php';
-//     break;
-//     case 'config':
-//     require_once CONTROLLERS.'/ConfigController.php';
-//     break;
-//     default:
-//     require_once CONTROLLERS.'/ErrorController.php';
-//         break;
-//   }
-//error_log('Hello logs');
-
-// var_dump(error_reporting());
-
-// var_dump(realpath(__DIR__.'/../bootstrap/app.php'));
-// if ($_SERVER['REQUEST_URI']=='/'){
-//    include "./home.php";
-// } elseif ($_SERVER['REQUEST_URI']=='/about')
-// { include "./about.php";}
-// elseif ($_SERVER['REQUEST_URI']=='/contact')
-// { include "./contact.php";}
-// else { include "./404.php";}
+(new Router())->run(Request::uri());

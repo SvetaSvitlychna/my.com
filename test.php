@@ -99,19 +99,129 @@
 //     }
 //     mysqli_close($link);
 
-$link = mysqli_connect('localhost', 'root', '', 'store');
+// $link = mysqli_connect('localhost', 'root', '', 'store');
 
-if (mysqli_connect_errno()){
-    die ("not connect: ".mysqli_connect_error());
+// if (mysqli_connect_errno()){
+//     die ("not connect: ".mysqli_connect_error());
+// }
+
+// $sql = "SELECT * FROM feedback";
+// $res = mysqli_query($link, $sql);
+
+// if(mysqli_num_rows($res)>0){
+//     while ($row = mysqli_fetch_assoc($res)){
+//         var_dump ($row);
+//     }
+// }
+
+//     mysqli_close($link);
+
+// class User {
+//     const FOO = "bar";
+// private $firstName;
+// private $lastName;
+// public $email;
+// protected $age;
+
+// static public $status = 0;
+// public function __construct($fn, $ln, $em, $age)
+// {
+//     $this ->email = $em;
+//     $this ->firstName = $fn;
+//     $this ->lastName = $ln;
+//     $this ->age = $age;
+// }
+// public function setFirstName($var){
+//     $this -> firstName = $var;
+// }
+// public function setLastName($var){
+//     $this -> lastName = $var;
+// }
+// public function setAge($var){
+//     $this -> age = $var;
+    
+//  }
+// public function getAge(){
+//     return $this->age;
+// }
+// public function name(){
+//     return self::FOO.$this ->firstName.$this ->lastName;
+// }
+// }
+// $user = new User("Tom", "Johns", "ex@my.com", 41);
+// var_dump($user);
+
+// $user1 = new User("Alice", "Dreams", "ex1@my.com", 35);
+// var_dump($user1);
+// $user1 -> email = "test@my.com";
+// var_dump($user1);
+// $user1->setAge(25);
+// var_dump($user1);
+
+// echo $user1 -> getAge();
+//echo $user1 -> name();
+//  echo User::FOO;
+// echo $user1->name();
+
+// echo User::$status = 1;
+
+
+
+// echo get_class($user);
+
+// $className = 'User';
+// $inst = new $className();
+// var_dump($inst);
+
+// print_r(PDO::getAvailableDrivers());
+
+// $host ="localhost";
+// $dbname ="store";
+// $user = "root";
+// $password = "";
+
+
+// try {
+//     $pdo = new PDO("mysql:host=$host;dbname=$dbname", $user, $password);
+//     echo " Connected Successfully".PHP_EOL;
+//     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+//     $sql= "CREATE DATABASE IF NOT EXISTS mydb";
+//     $pdo->exec($sql);
+//     //$pdo->prepare("DELECT name from posts")->execute();
+// } catch(PDOException $e) {
+//     error_log($e->getMessage());
+//     file_put_contents("PDOErrors.log", $e->getMessage());
+//     echo "Not connection".$e->getMessage().PHP_EOL;
+// }
+
+
+print_r(PDO::getAvailableDrivers());
+
+$host ="localhost";
+$dbname ="store";
+$user = "root";
+$password = "";
+try {
+    $pdo = new PDO("mysql:host=$host;dbname=$dbname", $user, $password);
+    echo " Connected Successfully".PHP_EOL;
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $sql= <<<SQL
+        CREATE TABLE products(
+            id int (11) NOT null AUTO_INCREMENT,
+            name varchar(255) NOT NULL,
+            status tinyint(1) NOT NULL,
+            category_id int(11) unsigned DEFAULT NULL,
+            price float unsigned NOT NULL,
+            description text NOT NULL,
+            is_new tinyint(1) DEFAULT 1,
+            is_recommended tinyint (1) DEFAULT 0,
+            PRIMARY KEY(id)
+        )ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+        SQL;
+    $pdo->exec($sql);
+    //$pdo->prepare("DELECT name from posts")->execute();
+} catch(PDOException $e) {
+    error_log($e->getMessage());
+    file_put_contents("PDOErrors.log", $e->getMessage());
+    echo "Not connection".$e->getMessage().PHP_EOL;
 }
-
-$sql = "SELECT * FROM feedback";
-$res = mysqli_query($link, $sql);
-
-if(mysqli_num_rows($res)>0){
-    while ($row = mysqli_fetch_assoc($res)){
-        var_dump ($row);
-    }
-}
-
-    mysqli_close($link);
