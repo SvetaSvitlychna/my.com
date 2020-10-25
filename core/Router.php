@@ -2,13 +2,28 @@
   
   class Router
 {
-    protected $routes = ROUTES;
+    protected $routes = [
+      'GET'=>[],
+      'POST'=>[]
+    ];
+    public function get($uri, $controller){
+      $this->routes['GET'][$uri]=$controller;
+    }
+    public function post($uri, $controller){
+      $this->routes['POST'][$uri]=$controller;
+    }
 
-    public function run($uri){
-      if (array_key_exists($uri, $this->routes)){
-        return $this->init(...$this->getController($this->routes[$uri]));
+    public static function load($file){
+      $router = new static;
+      require_once $file;
+      return $router;
+
+    }
+    public function run($uri, $requestType){
+      if (array_key_exists($uri, $this->routes[$requestType])){
+        return $this->init(...$this->getController($this->routes[$requestType][$uri]));
       }else {
-        foreach($this->routes as $key => $value){
+        foreach($this->routes [$requestType] as $key => $value){
           $pattern = "@^".preg_replace("/{([a-zA-Z]+)}/", "(?<$1>[0-9]+)",
            $key)."$@";
           preg_match($pattern, $uri, $matches);

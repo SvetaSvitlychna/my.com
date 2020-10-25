@@ -1,6 +1,6 @@
 
-   <div class="carousel">
-        <section class="hero pb-3 d-flex align-items-center">
+<div class="carousel">
+    <section class="hero pb-3 d-flex align-items-center">
             <article class="slider">
                 <div class="slides">
                     <div class="overflow">
@@ -52,48 +52,59 @@
                     </div>
                 </div>
             </article>
-    </section>
-    </div>
-        <section class="pt-5 categories">
+        </section>
+</div>
+<div class="collections">
+    <section class="pt-5 categories">
         <header class="text-center">
             <p class="small text-muted small text-uppercase mb-1">Carefully created collections</p>
             <h2 class="h5 text-uppercase mb-4">Browse our categories</h2>
         </header>
-    <div class="row">
+      <div class="row">
     
         <div class="col1-md-3">
-            <a class="category-item mb-4" data-category ="bicycle" href="#"><img class="img-fluid" src="assets/images/catwom2.jpg" alt=""><strong class="category-item category-item-title " data-category ="bicycle" >Bicycle</strong></a>
+            <a class="category-item mb-4" data-category ="bicycle" href="#">
+            <img class="img-fluid" src="assets/images/catwom2.jpg" 
+            alt=""><strong class="category-item category-item-title"
+             data-category ="bicycle" >Bicycle</strong></a>
         </div>
         <!-- <div class="col1-md-3">
             <a class="category-item mb-4"  data-category ="accessories" href="#"><img class="img-fluid" src="images/categkids.jpg" alt=""><strong class="category-item category-item-title " data-category ="kids">Kids</strong></a>
         </div>  -->
-            <div class="col1-md-3">   
-            <a class="category-item mb-4" data-category ="clothes" href="#"><img class="img-fluid" src="assets/images/prod33ClothM.jpg" alt=""><strong class="category-item category-item-title " data-category ="clothes">Clothes</strong></a>
+        <div class="col1-md-3">   
+            <a class="category-item mb-4" data-category ="clothes" 
+            href="#"><img class="img-fluid" 
+            src="assets/images/prod33ClothM.jpg" alt="">
+            <strong class="category-item category-item-title" 
+            data-category ="clothes">Clothes</strong></a>
         </div>
         <div class="col1-md-3">
-            <a class="category-item mb-4"  data-category ="accessories" href="#"><img class="img-fluid" src="assets/images/catass2.jpg" alt=""><strong class="category-item category-item-title " data-category ="accessories">Accessories</strong></a>
+            <a class="category-item mb-4"  
+            data-category ="accessories" href="#">
+            <img class="img-fluid" src="assets/images/catass2.jpg" 
+            alt=""><strong class="category-item category-item-title" 
+            data-category ="accessories">Accessories</strong></a>
         </div>
-    </div>
+       </div>
    
-</section>
+    </section>
 
     <div class="overlay-trend">
-    <div class=text-overlay>
-        <h2>You can't ride a bike</h2>
-        <p>You can do it with our school! </p>
-        <a href="#" class="btn btn-dark">Sign in to our school &raquo;</a>
-    </div>
+        <div class=text-overlay>
+            <h2>You can't ride a bike</h2>
+            <p>You can do it with our school! </p>
+            <a href="#" class="btn btn-dark">Sign in to our school &raquo;</a>
+        </div>
     </div>
     <section class="backgr">
         <header class="recommendation">
             <h2>Our Catalog</h2>
         </header>
         <div class="showcase rowprod">
-            
-
-        <div class="btn-btn">
-           <a href="catalog.html">See more</a>
-           </div>
-           </div>
+            <div class="btn-btn">
+                <a href="catalog.html">See more</a>
+            </div>
+        </div>
     </section>
+</div>
    

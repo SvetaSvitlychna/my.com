@@ -14,6 +14,6 @@ const LOGS = ROOT.'/logs';
 
 const DB_CONFIG_FILE = CONFIG.'/db.php';
 
-define('ROUTES', require_once CONFIG.'/routes.php');
+define('ROUTES', CONFIG.'/routes.php');
 
 

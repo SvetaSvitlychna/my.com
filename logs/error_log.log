@@ -4242,3 +4242,132 @@ Stack trace:
 [25-Oct-2020 12:53:44 Europe/Kiev] PHP Notice:  Trying to get property 'id' of non-object in C:\xampp\htdocs\my.com\app\Views\admin\products\edit.php on line 41
 [25-Oct-2020 12:53:44 Europe/Kiev] PHP Notice:  Undefined variable: brands in C:\xampp\htdocs\my.com\app\Views\admin\products\edit.php on line 42
 [25-Oct-2020 12:53:44 Europe/Kiev] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\my.com\app\Views\admin\products\edit.php on line 42
+[25-Oct-2020 13:21:57 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to a member function preparedStmt() on null in C:\xampp\htdocs\my.com\core\Model.php:10
+Stack trace:
+#0 C:\xampp\htdocs\my.com\app\Controllers\Admin\ProductController.php(17): Model::all()
+#1 C:\xampp\htdocs\my.com\core\Router.php(46): ProductController->create(Array)
+#2 C:\xampp\htdocs\my.com\core\Router.php(9): Router->init('C:\\xampp\\htdocs...', Object(ProductController), 'create')
+#3 C:\xampp\htdocs\my.com\bootstrap\app.php(44): Router->run('admin/products/...')
+#4 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\my.com\core\Model.php on line 10
+[25-Oct-2020 13:22:22 Europe/Kiev] PHP Notice:  compact(): Undefined variable: brands in C:\xampp\htdocs\my.com\app\Controllers\Admin\ProductController.php on line 19
+[25-Oct-2020 13:22:22 Europe/Kiev] PHP Notice:  Undefined variable: brands in C:\xampp\htdocs\my.com\app\Views\admin\products\create.php on line 43
+[25-Oct-2020 14:26:21 Europe/Kiev] PHP Notice:  compact(): Undefined variable: brands in C:\xampp\htdocs\my.com\app\Controllers\Admin\ProductController.php on line 20
+[25-Oct-2020 14:26:21 Europe/Kiev] PHP Notice:  Undefined variable: brands in C:\xampp\htdocs\my.com\app\Views\admin\products\create.php on line 43
+[25-Oct-2020 14:31:26 Europe/Kiev] PHP Notice:  compact(): Undefined variable: brands in C:\xampp\htdocs\my.com\app\Controllers\Admin\ProductController.php on line 20
+[25-Oct-2020 14:31:26 Europe/Kiev] PHP Notice:  Undefined variable: brands in C:\xampp\htdocs\my.com\app\Views\admin\products\create.php on line 43
+[25-Oct-2020 14:35:59 Europe/Kiev] PHP Notice:  compact(): Undefined variable: brands in C:\xampp\htdocs\my.com\app\Controllers\Admin\ProductController.php on line 20
+[25-Oct-2020 14:35:59 Europe/Kiev] PHP Notice:  Undefined variable: brands in C:\xampp\htdocs\my.com\app\Views\admin\products\create.php on line 43
+[25-Oct-2020 14:36:45 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to undefined method Request::cleanInpu() in C:\xampp\htdocs\my.com\core\Request.php:20
+Stack trace:
+#0 C:\xampp\htdocs\my.com\core\Request.php(9): Request->margeData(Array, Array)
+#1 C:\xampp\htdocs\my.com\app\Controllers\Admin\ProductController.php(30): Request->__construct()
+#2 C:\xampp\htdocs\my.com\core\Router.php(46): ProductController->store(Array)
+#3 C:\xampp\htdocs\my.com\core\Router.php(9): Router->init('C:\\xampp\\htdocs...', Object(ProductController), 'store')
+#4 C:\xampp\htdocs\my.com\bootstrap\app.php(44): Router->run('admin/products/...')
+#5 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\my.com\core\Request.php on line 20
+[25-Oct-2020 14:37:17 Europe/Kiev] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'brand_id' cannot be null
+[25-Oct-2020 14:39:06 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to a member function preparedStmt() on null in C:\xampp\htdocs\my.com\core\Model.php:10
+Stack trace:
+#0 C:\xampp\htdocs\my.com\app\Controllers\Admin\ProductController.php(18): Model::all()
+#1 C:\xampp\htdocs\my.com\core\Router.php(46): ProductController->create(Array)
+#2 C:\xampp\htdocs\my.com\core\Router.php(9): Router->init('C:\\xampp\\htdocs...', Object(ProductController), 'create')
+#3 C:\xampp\htdocs\my.com\bootstrap\app.php(44): Router->run('admin/products/...')
+#4 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\my.com\core\Model.php on line 10
+[25-Oct-2020 14:40:49 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to a member function preparedStmt() on null in C:\xampp\htdocs\my.com\core\Model.php:10
+Stack trace:
+#0 C:\xampp\htdocs\my.com\app\Controllers\Admin\ProductController.php(18): Model::all()
+#1 C:\xampp\htdocs\my.com\core\Router.php(46): ProductController->create(Array)
+#2 C:\xampp\htdocs\my.com\core\Router.php(9): Router->init('C:\\xampp\\htdocs...', Object(ProductController), 'create')
+#3 C:\xampp\htdocs\my.com\bootstrap\app.php(44): Router->run('admin/products/...')
+#4 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\my.com\core\Model.php on line 10
+[25-Oct-2020 14:41:04 Europe/Kiev] PHP Notice:  compact(): Undefined variable: brands in C:\xampp\htdocs\my.com\app\Controllers\Admin\ProductController.php on line 20
+[25-Oct-2020 14:41:04 Europe/Kiev] PHP Notice:  Undefined variable: brands in C:\xampp\htdocs\my.com\app\Views\admin\products\create.php on line 43
+[25-Oct-2020 16:47:39 Europe/Kiev] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'brand_id' cannot be null
+[25-Oct-2020 16:47:54 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to a member function preparedStmt() on null in C:\xampp\htdocs\my.com\core\Model.php:10
+Stack trace:
+#0 C:\xampp\htdocs\my.com\app\Controllers\Admin\ProductController.php(18): Model::all()
+#1 C:\xampp\htdocs\my.com\core\Router.php(46): ProductController->create(Array)
+#2 C:\xampp\htdocs\my.com\core\Router.php(9): Router->init('C:\\xampp\\htdocs...', Object(ProductController), 'create')
+#3 C:\xampp\htdocs\my.com\bootstrap\app.php(44): Router->run('admin/products/...')
+#4 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\my.com\core\Model.php on line 10
+[25-Oct-2020 16:49:51 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to a member function preparedStmt() on null in C:\xampp\htdocs\my.com\core\Model.php:10
+Stack trace:
+#0 C:\xampp\htdocs\my.com\app\Controllers\Admin\ProductController.php(18): Model::all()
+#1 C:\xampp\htdocs\my.com\core\Router.php(46): ProductController->create(Array)
+#2 C:\xampp\htdocs\my.com\core\Router.php(9): Router->init('C:\\xampp\\htdocs...', Object(ProductController), 'create')
+#3 C:\xampp\htdocs\my.com\bootstrap\app.php(44): Router->run('admin/products/...')
+#4 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\my.com\core\Model.php on line 10
+[25-Oct-2020 16:52:35 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to a member function preparedStmt() on null in C:\xampp\htdocs\my.com\core\Model.php:10
+Stack trace:
+#0 C:\xampp\htdocs\my.com\app\Controllers\Admin\ProductController.php(18): Model::all()
+#1 C:\xampp\htdocs\my.com\core\Router.php(46): ProductController->create(Array)
+#2 C:\xampp\htdocs\my.com\core\Router.php(9): Router->init('C:\\xampp\\htdocs...', Object(ProductController), 'create')
+#3 C:\xampp\htdocs\my.com\bootstrap\app.php(44): Router->run('admin/products/...')
+#4 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\my.com\core\Model.php on line 10
+[25-Oct-2020 16:52:48 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to a member function preparedStmt() on null in C:\xampp\htdocs\my.com\core\Model.php:10
+Stack trace:
+#0 C:\xampp\htdocs\my.com\app\Controllers\Admin\ProductController.php(18): Model::all()
+#1 C:\xampp\htdocs\my.com\core\Router.php(46): ProductController->create(Array)
+#2 C:\xampp\htdocs\my.com\core\Router.php(9): Router->init('C:\\xampp\\htdocs...', Object(ProductController), 'create')
+#3 C:\xampp\htdocs\my.com\bootstrap\app.php(44): Router->run('admin/products/...')
+#4 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\my.com\core\Model.php on line 10
+[25-Oct-2020 16:59:47 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to a member function preparedStmt() on null in C:\xampp\htdocs\my.com\core\Model.php:10
+Stack trace:
+#0 C:\xampp\htdocs\my.com\app\Controllers\Admin\ProductController.php(18): Model::all()
+#1 C:\xampp\htdocs\my.com\core\Router.php(46): ProductController->create(Array)
+#2 C:\xampp\htdocs\my.com\core\Router.php(9): Router->init('C:\\xampp\\htdocs...', Object(ProductController), 'create')
+#3 C:\xampp\htdocs\my.com\bootstrap\app.php(44): Router->run('admin/products/...')
+#4 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\my.com\core\Model.php on line 10
+[25-Oct-2020 20:38:49 Europe/Kiev] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Router::run(), 1 passed in C:\xampp\htdocs\my.com\bootstrap\app.php on line 44 and exactly 2 expected in C:\xampp\htdocs\my.com\core\Router.php:16
+Stack trace:
+#0 C:\xampp\htdocs\my.com\bootstrap\app.php(44): Router->run('admin')
+#1 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\my.com\core\Router.php on line 16
+[25-Oct-2020 20:46:25 Europe/Kiev] PHP Notice:  Array to string conversion in C:\xampp\htdocs\my.com\core\Router.php on line 18
+[25-Oct-2020 20:46:25 Europe/Kiev] PHP Warning:  require_once(Array): failed to open stream: No such file or directory in C:\xampp\htdocs\my.com\core\Router.php on line 18
+[25-Oct-2020 20:46:25 Europe/Kiev] PHP Fatal error:  require_once(): Failed opening required 'Array' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\my.com\core\Router.php on line 18
+[25-Oct-2020 21:11:03 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to a member function preparedStmt() on null in C:\xampp\htdocs\my.com\core\Model.php:10
+Stack trace:
+#0 C:\xampp\htdocs\my.com\app\Controllers\Admin\ProductController.php(18): Model::all()
+#1 C:\xampp\htdocs\my.com\core\Router.php(61): ProductController->create(Array)
+#2 C:\xampp\htdocs\my.com\core\Router.php(24): Router->init('C:\\xampp\\htdocs...', Object(ProductController), 'create')
+#3 C:\xampp\htdocs\my.com\bootstrap\app.php(44): Router->run('admin/products/...', 'GET')
+#4 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\my.com\core\Model.php on line 10
+[25-Oct-2020 21:13:01 Europe/Kiev] PHP Notice:  Undefined variable: category in C:\xampp\htdocs\my.com\app\Views\admin\products\edit.php on line 30
+[25-Oct-2020 21:13:01 Europe/Kiev] PHP Notice:  Trying to get property 'id' of non-object in C:\xampp\htdocs\my.com\app\Views\admin\products\edit.php on line 30
+[25-Oct-2020 21:13:01 Europe/Kiev] PHP Notice:  Undefined variable: categories in C:\xampp\htdocs\my.com\app\Views\admin\products\edit.php on line 31
+[25-Oct-2020 21:13:01 Europe/Kiev] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\my.com\app\Views\admin\products\edit.php on line 31
+[25-Oct-2020 21:13:01 Europe/Kiev] PHP Notice:  Undefined variable: brand in C:\xampp\htdocs\my.com\app\Views\admin\products\edit.php on line 41
+[25-Oct-2020 21:13:01 Europe/Kiev] PHP Notice:  Trying to get property 'id' of non-object in C:\xampp\htdocs\my.com\app\Views\admin\products\edit.php on line 41
+[25-Oct-2020 21:13:01 Europe/Kiev] PHP Notice:  Undefined variable: brands in C:\xampp\htdocs\my.com\app\Views\admin\products\edit.php on line 42
+[25-Oct-2020 21:13:01 Europe/Kiev] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\my.com\app\Views\admin\products\edit.php on line 42
+[25-Oct-2020 21:16:04 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to a member function preparedStmt() on null in C:\xampp\htdocs\my.com\core\Model.php:10
+Stack trace:
+#0 C:\xampp\htdocs\my.com\app\Controllers\Admin\ProductController.php(18): Model::all()
+#1 C:\xampp\htdocs\my.com\core\Router.php(61): ProductController->create(Array)
+#2 C:\xampp\htdocs\my.com\core\Router.php(24): Router->init('C:\\xampp\\htdocs...', Object(ProductController), 'create')
+#3 C:\xampp\htdocs\my.com\bootstrap\app.php(44): Router->run('admin/products/...', 'GET')
+#4 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\my.com\core\Model.php on line 10

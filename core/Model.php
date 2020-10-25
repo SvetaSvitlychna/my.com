@@ -6,8 +6,8 @@ require_once CORE.'/Connection.php';
     protected static $pk = '';
 
     public static function all(){
-        // $pdo = Connection::connect();
-        $stmt = Connection::connect()->preparedStmt("SELECT * FROM ".
+         $pdo = Connection::connect();
+        $stmt = $pdo->preparedStmt("SELECT * FROM ".
         static::$table);
         $stmt->execute();
         return $stmt->fetchAll();
@@ -57,6 +57,14 @@ require_once CORE.'/Connection.php';
         $stmt = Connection::connect()->preparedStmt("DELETE FROM ".
         static::$table." WHERE ".static::$pk."=? LIMIT 1");
         $stmt ->execute([$id]);      
+    }
+    public static function lastId(){
+        $query ="SELECT id FROM ".static::$table." ORDER BY
+    id  DESC LIMIT 1";
+    $pdo =Connection::connect();
+    $stmt = $pdo->preparedStmt($query);
+    $stmt ->execute(); 
+    return $stmt->fetch(PDO::FETCH_ASSOC)['id'];
     }
 }
    
