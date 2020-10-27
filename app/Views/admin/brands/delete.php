@@ -2,13 +2,14 @@
     <div class="card">
         <div class="card-header">
             <?=$title?> <?=$brand->name?>
-            <a href="/admin/categories" class ="float-right"> 
+            <a href="/admin/brands" class ="float-right"> 
             <button class ="btn btn-primary text-right">
                 <span data-feather ="plus"></span>&nbsp;Go Back
             </button></a>
         </div>
         <div class="card-body">
-          <form class="form-horizontal" method="POST">
+          <form class="form-horizontal" method="POST"
+          action="/admin/brands/destroy/<?=$brand->id?>">
           <input type ="hidden" name ="id" value="<?=$brand->id?>">
             <div class="panel-body">
               <div class="form-group">

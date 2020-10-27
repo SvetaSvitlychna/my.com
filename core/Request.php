@@ -38,11 +38,11 @@ class Request
     public static function uri(){
         return isset ($_SERVER['REQUEST_URI']) ? trim 
         ($_SERVER['REQUEST_URI'], '/') : null;
-      }
-      public static function method(){
+    }
+    public static function method(){
         return $_SERVER['REQUEST_METHOD'];
         
-      }
+    }
     
 }
 

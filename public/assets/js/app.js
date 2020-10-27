@@ -4,6 +4,9 @@ class Storage{
     static saveProduct(newproduct){
         localStorage.setItem('newproduct',JSON.stringify(newproduct));
     }
+    static saveStorageItem(key, item){
+        localStorage.setItem(key, JSON.stringify(item));
+    }
     static getProduct(id){
         let newproduct = JSON.parse(localStorage.getItem('newproduct'));
         return newproduct.find(product=>product.id===+(id));
@@ -18,17 +21,30 @@ class Storage{
     static getCart(){
     return localStorage.getItem("basket") ? JSON.parse(localStorage.getItem("basket")):[];
 }
+static getStorageItem (key){
+    return JSON.parse(localStorage.getItem(key));
+}
 }
 
 class Product {
-    getProducts(newproduct){
-        return newproduct.map(item => {
+    makeModel(products){
+        return products.map(item => {
             const name= item.name;
             const price =item.price;
             const id= item.id;
-            const image =item.image;
+            const image ="/assets/images/products/"+item.picture;
             const category = item.category;
             return {id,name, price, image, category};
+        });
+    }
+}
+class Category {
+    makeModel(categories){
+        return categories.map(item => {
+            const id= item.id;
+            const name= item.name;
+            const image ="/assets/images/products/categories/"+item.picture;
+            return {id,name, image};
         });
     }
 }
@@ -287,14 +303,48 @@ renderCategory(){
             console.log(category);
             const categoryFilter = items => items.filter(item => item.category.includes(category));
           console.log(categoryFilter);
-            this.makeShowCase(categoryFilter(Storage.getProducts())); 
+            this.makeShowCase(categoryFilter(Storage.getStorageItem())); 
             
         } else {
-            this.makeShowCase(Storage.getProducts());
+            this.makeShowCase(Storage.getStorageItem());
         }
         this.addToCart();
         this.renderCart();                  
         }); 
+    }
+}
+fetchData(resource, model){
+    const baseUrl = `/api/${resource}`;
+    fetch(baseUrl)
+        .then((response) =>{
+            if (response.status !==200){
+                 console.log (`Looks like something went wrong. Status code:`    
+                + response.status);
+                return;
+            }
+            response.json().then(jsonData =>{
+                Storage.saveStorageItem(resource, model.makeModel(jsonData))
+            });
+        })
+        .catch(err=>{
+            console.log(`Fetch error: ${err}`);
+        });
+}
+createCategory(category){
+    return`
+    <a class="category-item mb-4" data-category ="${category.name}" 
+    href="#"><img class="img-fluid" src="${category.image}" 
+    alt="${category.name}"><strong class="category-item 
+    category-item-title" data-category="${category.name}">${category.name}</strong></a>
+     `;
+}
+makeCategories(categories){
+    let limit = (categories.length>3)? 3:categories.length;
+    for (let i=0; i<limit; i++){
+        let div = document.createElement('div');
+        div.classList.add('col-md-4');
+        div.innerHTML = this.createCategory(categories[i]);
+        document.querySelector('.categories').append(div);
     }
 }
 
@@ -324,24 +374,12 @@ function navbarNav(className, url, icon, capture=''){
 
 //=========
 (function(){
-    const url = 'https://my-json-server.typicode.com/SvetaSvitlychna/db/data';
-    fetch (url)
-    .then(response=>{
-        response.json()
-        .then(newproduct=>{
-        const app =new App();
-        let data = new Product();
-          Storage.saveProduct(data.getProducts(newproduct));
-      console.log(data.getProducts(newproduct))
-      app.makeShowCase(newproduct);
-        app.addToCart();
-        app.renderCart();
-        app.renderCategory();
-})
-    })
-    .catch(err=>{
-        console.log(err);
-    })
+    const app =new App();
+    if (document.querySelector('.collections')){
+        app.fetchData('categories',new Category());
+        app.makeCategories(Storage.getStorageItem('categories'));
+    }
+    
 
 document.querySelector('.navbar-nav').innerHTML =
 `${navbarNav('', '/', 'fa-home', 'Home')}
@@ -364,5 +402,11 @@ ${footerContact('phone','','fas fa-phone','+38 000 000 00 00')}
 ${footerContact('viber','','fab fa-viber', '+38 000 111 11 11')}
 ${footerContact('telegram','','fab fa-telegram', '+38 000 111 11 11')}`;
 
+
+    app.fetchData("products", new Product());
+    app.makeShowcase(Storage.getStorageItem("products"));
+    app.addToCarts();
+    app.renderCart();
+    app.renderCategory();
 })();
 

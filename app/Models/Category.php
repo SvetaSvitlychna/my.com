@@ -54,8 +54,15 @@ class Category extends Model
     protected static $table = "categories";
     protected static $pk = "id";
 
+    public static function getResource(){
+        return self::$table;
+    }
     public static function getCategories(){
-        $categories= Category::getCategories();
+        $sql ="SELECT t1.*,t2.picture FROM categories AS t1 
+        JOIN (SELECT resource,resource_id, filename picture FROM pictures 
+        GROUP BY resource_id) AS t2 on t2.resource = 'categories' AND 
+        t1.id = t2.resource_id";
+        return parent::getWithSql($sql);
     }
    
 }

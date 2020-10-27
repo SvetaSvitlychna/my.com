@@ -11,6 +11,7 @@ require_once CORE.'/Connection.php';
         static::$table);
         $stmt->execute();
         return $stmt->fetchAll();
+    
         }
     public function getById($id){
         $stmt = Connection::connect()->preparedStmt("SELECT * FROM ".
@@ -26,8 +27,6 @@ require_once CORE.'/Connection.php';
             implode(', ', array_keys($params)),
             ':'.implode(', :', array_keys($params))
         );
-        // var_dump($sql);
-        // exit();
             try{
                 $stmt = $pdo->preparedStmt($sql);
                 $stmt->execute($params);
@@ -42,17 +41,16 @@ require_once CORE.'/Connection.php';
             array_push($keys, $key."= '".$value."'");
         }
         $sql = sprintf("UPDATE %s SET %s WHERE %s=%s",
-        static::$table, 
-        implode(',', $keys),
-        static::$pk, $id);
+        static::$table, implode(',', $keys),static::$pk, $id);
         $pdo =Connection::connect();
-        try { 
-            $stmt = $pdo->preparedStmt($sql);
-            $stmt = execute($params);
-        } catch(Exception $e){
-            error_log($e->getMessage());
-        }
+            try { 
+                $stmt = $pdo->preparedStmt($sql);
+                $stmt -> execute();
+            } catch(Exception $e){
+                error_log($e->getMessage());
+            }
     }
+    
     public static function destroy($id){
         $stmt = Connection::connect()->preparedStmt("DELETE FROM ".
         static::$table." WHERE ".static::$pk."=? LIMIT 1");
@@ -60,11 +58,17 @@ require_once CORE.'/Connection.php';
     }
     public static function lastId(){
         $query ="SELECT id FROM ".static::$table." ORDER BY
-    id  DESC LIMIT 1";
-    $pdo =Connection::connect();
-    $stmt = $pdo->preparedStmt($query);
-    $stmt ->execute(); 
-    return $stmt->fetch(PDO::FETCH_ASSOC)['id'];
+        id  DESC LIMIT 1";
+        $pdo =Connection::connect();
+        $stmt = $pdo->preparedStmt($query); 
+        $stmt ->execute(); 
+        return $stmt->fetch(PDO::FETCH_ASSOC)['id'];
+    }
+    public static function getWithSql($sql){
+        $pdo =Connection::connect();
+        $stmt = $pdo->preparedStmt($sql);
+        $stmt ->execute(); 
+        return $stmt->fetchAll();
     }
 }
    

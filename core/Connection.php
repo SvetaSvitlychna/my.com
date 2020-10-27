@@ -19,12 +19,12 @@ class Connection extends PDO
                self::$config['password'],
                self::$config['options']
            );
-           return self::$instance;
-        }
+        }return self::$instance;
     }
     
     public  function preparedStmt($query){
         return $this->prepare($query);
+        
     }
     private static function makeDsn($config){
         $dsn = $config['driver'].':';

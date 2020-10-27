@@ -8,7 +8,8 @@
             </button></a>
         </div>
         <div class="card-body">
-          <form class="form-horizontal" method="POST">
+          <form class="form-horizontal" role="form" method="POST"
+          action="/admin/products/destroy/<?=$product->id?>">
           <input type ="hidden" name ="id" value="<?=$product->id?>">
             <div class="panel-body">
               <div class="form-group">

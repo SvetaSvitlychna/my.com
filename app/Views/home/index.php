@@ -60,9 +60,9 @@
             <p class="small text-muted small text-uppercase mb-1">Carefully created collections</p>
             <h2 class="h5 text-uppercase mb-4">Browse our categories</h2>
         </header>
-      <div class="row">
+      <div class="row categories">
     
-        <div class="col1-md-3">
+        <!-- <div class="col1-md-3">
             <a class="category-item mb-4" data-category ="bicycle" href="#">
             <img class="img-fluid" src="assets/images/catwom2.jpg" 
             alt=""><strong class="category-item category-item-title"
@@ -71,20 +71,20 @@
         <!-- <div class="col1-md-3">
             <a class="category-item mb-4"  data-category ="accessories" href="#"><img class="img-fluid" src="images/categkids.jpg" alt=""><strong class="category-item category-item-title " data-category ="kids">Kids</strong></a>
         </div>  -->
-        <div class="col1-md-3">   
+        <!-- <div class="col1-md-3">   
             <a class="category-item mb-4" data-category ="clothes" 
             href="#"><img class="img-fluid" 
             src="assets/images/prod33ClothM.jpg" alt="">
             <strong class="category-item category-item-title" 
             data-category ="clothes">Clothes</strong></a>
         </div>
-        <div class="col1-md-3">
-            <a class="category-item mb-4"  
+        <div class="col1-md-3"> -->
+            <!-- <a class="category-item mb-4"  
             data-category ="accessories" href="#">
             <img class="img-fluid" src="assets/images/catass2.jpg" 
             alt=""><strong class="category-item category-item-title" 
             data-category ="accessories">Accessories</strong></a>
-        </div>
+        </div>  -->
        </div>
    
     </section>

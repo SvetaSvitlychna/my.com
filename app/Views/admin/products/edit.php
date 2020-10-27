@@ -7,7 +7,7 @@
             </button></a>
         </div>
         <div class="card-body">
-            <form action="/admin/products/patch" method="POST">
+            <form action="/admin/products/update/<?=$product->id?>" method="POST">
             <input type="hidden" name="id" value="<?=$product->id?>">
                 <div class="form-group">
                     <lable for ="name">Name:</lable>
@@ -17,19 +17,21 @@
                 <div class="form-group">
                     <lable for="status">Status:</lable>
                     <input type="checkbox" class="form-control" id="status" 
-                name="status"<?php echo ($product->status==1)?'checked':''?>>
+                name="status"<?=($product->status===1)?'checked':''?>>
                 </div>
                 <div class="form-group">
                     <lable for ="price">Product Price:</lable>
                     <input type="text" class="form-control" id="price"
-                    name="price" value="<?=$product->name?>" required>
+                    name="price" value="<?=$product->price?>" required>
                 </div>
                 <div class="form-group">
                     <lable for ="category">Category:</lable>
-                    <select class="form-control" name="category_id" 
-                    value="<?=$category->id?>">
-                    <?php foreach($categories as $category):?>
-                    <option value="<?=$category->id?>">
+                    <select class="form-control" name="category_id" >
+                   <?php foreach($categories as $category):?>
+                    <option value="<?=$category->id?>"
+                        <?php 
+                        if($category->id ===$product->category_id)
+                        echo 'selected="selected"';?>>
                         <?=$category->name?>
                     </option>
                     <?php endforeach?>
@@ -37,10 +39,11 @@
                 </div>
                 <div class="form-group">
                     <lable for ="brand">Brand:</lable>
-                    <select class="form-control" name="brand_id" 
-                    value="<?=$brand->id?>">
+                    <select class="form-control" name="brand_id" >
                     <?php foreach($brands as $brand):?>
-                    <option value="<?=$brand->id?>">
+                    <option value="<?=$brand->id?>"
+                    <?php if ($brand ->id === $product->brand_id) 
+                    echo 'selected="selected"';?>>
                         <?=$brand->name?>
                     </option>
                     <?php endforeach?>
@@ -49,7 +52,7 @@
                 <div class="form-group">
                     <lable for ="description">Description:</lable>
                         <input type="text" class="form-control" id="description"
-                        name="description" value="<?=$product->name?>" required>
+                        name="description" value="<?=$product->description?>" required>
                 </div>
                 <div class="mx-auto">
                     <button type="submit" class="btn btn-primary">Update</button>

@@ -7,9 +7,10 @@
             </button></a>
         </div>
         <div class="card-body">
-            <form action="/admin/products/store" method="POST">
+            <form action="/admin/products/store" method="POST" 
+            enctype="multipart/form-data">
                 <div class="form-group">
-                    <lable for="name">Name:</lable>
+                    <lable for="name"> Product Name:</lable>
                     <input type="text" class="form-control" id="name"
                     name="name" placeholder="Enter product Name" required>
                 </div>

@@ -21,7 +21,8 @@
     }
     public function run($uri, $requestType){
       if (array_key_exists($uri, $this->routes[$requestType])){
-        return $this->init(...$this->getController($this->routes[$requestType][$uri]));
+        return $this->init(...$this->getController($this->routes
+        [$requestType][$uri]));
       }else {
         foreach($this->routes [$requestType] as $key => $value){
           $pattern = "@^".preg_replace("/{([a-zA-Z]+)}/", "(?<$1>[0-9]+)",
@@ -39,7 +40,7 @@
       }
     }
 
-   private function getController($path){
+    private function getController($path){
       $segments =explode('\\', $path);
       list($controller, $action) = explode('@', array_pop($segments));
       $controllerPath = DIRECTORY_SEPARATOR;
@@ -47,18 +48,16 @@
         $controllerPath.=$segment.DIRECTORY_SEPARATOR;
       }
       return[$controllerPath, $controller, $action];
-      // var_dump($controller, $action);
-      // var_dump($segments);
     }
-   private function init($controllerPath, $controller, $action, $vars=[]){
-      $controllerPath = CONTROLLERS.$controllerPath.$controller.'.php';
-      try{
-        include_once $controllerPath; 
-        $controller = new $controller();
-      }catch(Exception $e){
-        error_log($e->getMessage());
-      }
-     return  $controller->$action($vars);
+    private function init($controllerPath, $controller, $action, $vars=[]){
+        $controllerPath = CONTROLLERS.$controllerPath.$controller.'.php';
+        try{
+          include_once $controllerPath; 
+          $controller = new $controller;
+        }catch(Exception $e){
+          error_log($e->getMessage());
+        }
+      return  $controller->$action($vars);
     }
-  }
+}
   

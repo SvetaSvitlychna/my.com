@@ -12,9 +12,9 @@
    <?php require_once VIEWS.'/layouts/partials/_sidebar.php';?>
 
 
-  <?php include_once VIEWS.'/'.$template;?> 
+    <?php include_once VIEWS.'/'.$template;?> 
 
-   <?php require_once VIEWS.'/layouts/partials/_footer.php';?>
+    <?php require_once VIEWS.'/layouts/partials/_footer.php';?>
   
    
     <script src="/assets/js/app.js"></script>

@@ -8,18 +8,20 @@
             </button></a>
         </div>
         <div class="card-body">
-          <form action="/admin/categories/patch" method="POST">
+          <form action="/admin/categories/update/<?=$category->id?>" method="POST">
           <input type="hidden" name="id" value="<?=$category->id?>">
             <div class="form-group">
                 <lable for ="username">Name:</lable>
-                <input type="text" class="form-control" id="name" name="name"
+                <input type="text" class="form-control" id="name" 
+                name="name"
                 value="<?=$category->name?>" required>
             </div>
             <div class="form-group">
                 <lable for="status">Status:</lable>
                 <input type="checkbox" class="form-control" id="status" 
-                name="status"<?php echo ($category->status==1)?'checked':''?>>
+                name="status"<?=($category->status===1)?'checked':''?>>
             </div>
+            
             <div class="mx-auto">
                 <button type="submit" class="btn btn-primary">Update</button>
             </div>
