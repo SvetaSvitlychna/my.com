@@ -4998,3 +4998,170 @@ Stack trace:
 [27-Oct-2020 21:34:59 Europe/Kiev] PHP Fatal error:  require_once(): Failed opening required 'C:\xampp\htdocs\my.com/app/Views/admin/products/show.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\my.com\app\Views\layouts\admin.php on line 16
 [27-Oct-2020 21:37:11 Europe/Kiev] PHP Deprecated:  Non-static method Model::getById() should not be called statically in C:\xampp\htdocs\my.com\app\Controllers\Admin\CategoryController.php on line 94
 [27-Oct-2020 22:11:39 Europe/Kiev] PHP Parse error:  syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST) in C:\xampp\htdocs\my.com\app\Models\Product.php on line 39
+[29-Oct-2020 10:59:18 Europe/Kiev] PHP Warning:  require_once(C:\xampp\htdocs\my.com/app/Views/admin/users/index.php): failed to open stream: No such file or directory in C:\xampp\htdocs\my.com\app\Views\layouts\admin.php on line 16
+[29-Oct-2020 10:59:18 Europe/Kiev] PHP Fatal error:  require_once(): Failed opening required 'C:\xampp\htdocs\my.com/app/Views/admin/users/index.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\my.com\app\Views\layouts\admin.php on line 16
+[29-Oct-2020 11:02:46 Europe/Kiev] PHP Warning:  require_once(C:\xampp\htdocs\my.com/app/Views/admin/users/index.php): failed to open stream: No such file or directory in C:\xampp\htdocs\my.com\app\Views\layouts\admin.php on line 16
+[29-Oct-2020 11:02:46 Europe/Kiev] PHP Fatal error:  require_once(): Failed opening required 'C:\xampp\htdocs\my.com/app/Views/admin/users/index.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\my.com\app\Views\layouts\admin.php on line 16
+[29-Oct-2020 11:03:07 Europe/Kiev] PHP Warning:  require_once(C:\xampp\htdocs\my.com/app/Views/admin/users/index.php): failed to open stream: No such file or directory in C:\xampp\htdocs\my.com\app\Views\layouts\admin.php on line 16
+[29-Oct-2020 11:03:07 Europe/Kiev] PHP Fatal error:  require_once(): Failed opening required 'C:\xampp\htdocs\my.com/app/Views/admin/users/index.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\my.com\app\Views\layouts\admin.php on line 16
+[29-Oct-2020 11:10:01 Europe/Kiev] PHP Notice:  Undefined variable: categories in C:\xampp\htdocs\my.com\app\Views\admin\users\create.php on line 31
+[29-Oct-2020 11:10:01 Europe/Kiev] PHP Notice:  Undefined variable: brands in C:\xampp\htdocs\my.com\app\Views\admin\users\create.php on line 44
+[29-Oct-2020 11:33:54 Europe/Kiev] PHP Notice:  Undefined variable: categories in C:\xampp\htdocs\my.com\app\Views\admin\users\create.php on line 36
+[29-Oct-2020 11:33:55 Europe/Kiev] PHP Notice:  Undefined variable: brands in C:\xampp\htdocs\my.com\app\Views\admin\users\create.php on line 49
+[29-Oct-2020 11:33:55 Europe/Kiev] PHP Notice:  Undefined variable: user in C:\xampp\htdocs\my.com\app\Views\admin\users\create.php on line 91
+[29-Oct-2020 11:33:55 Europe/Kiev] PHP Notice:  Trying to get property 'password' of non-object in C:\xampp\htdocs\my.com\app\Views\admin\users\create.php on line 91
+[29-Oct-2020 11:33:55 Europe/Kiev] PHP Notice:  Undefined variable: user in C:\xampp\htdocs\my.com\app\Views\admin\users\create.php on line 92
+[29-Oct-2020 11:33:55 Europe/Kiev] PHP Notice:  Trying to get property 'role_id' of non-object in C:\xampp\htdocs\my.com\app\Views\admin\users\create.php on line 92
+[29-Oct-2020 11:33:55 Europe/Kiev] PHP Notice:  Undefined variable: user in C:\xampp\htdocs\my.com\app\Views\admin\users\create.php on line 93
+[29-Oct-2020 11:33:55 Europe/Kiev] PHP Notice:  Trying to get property 'first_name' of non-object in C:\xampp\htdocs\my.com\app\Views\admin\users\create.php on line 93
+[29-Oct-2020 11:33:55 Europe/Kiev] PHP Notice:  Undefined variable: user in C:\xampp\htdocs\my.com\app\Views\admin\users\create.php on line 94
+[29-Oct-2020 11:33:55 Europe/Kiev] PHP Notice:  Trying to get property 'last_name' of non-object in C:\xampp\htdocs\my.com\app\Views\admin\users\create.php on line 94
+[29-Oct-2020 11:33:55 Europe/Kiev] PHP Notice:  Undefined variable: user in C:\xampp\htdocs\my.com\app\Views\admin\users\create.php on line 95
+[29-Oct-2020 11:33:55 Europe/Kiev] PHP Notice:  Trying to get property 'phone_number' of non-object in C:\xampp\htdocs\my.com\app\Views\admin\users\create.php on line 95
+[29-Oct-2020 11:47:44 Europe/Kiev] PHP Notice:  Undefined variable: categories in C:\xampp\htdocs\my.com\app\Views\admin\users\create.php on line 36
+[29-Oct-2020 11:47:44 Europe/Kiev] PHP Notice:  Undefined variable: brands in C:\xampp\htdocs\my.com\app\Views\admin\users\create.php on line 49
+[29-Oct-2020 11:47:44 Europe/Kiev] PHP Notice:  Undefined variable: user in C:\xampp\htdocs\my.com\app\Views\admin\users\create.php on line 91
+[29-Oct-2020 11:47:44 Europe/Kiev] PHP Notice:  Trying to get property 'password' of non-object in C:\xampp\htdocs\my.com\app\Views\admin\users\create.php on line 91
+[29-Oct-2020 11:47:44 Europe/Kiev] PHP Notice:  Undefined variable: user in C:\xampp\htdocs\my.com\app\Views\admin\users\create.php on line 92
+[29-Oct-2020 11:47:44 Europe/Kiev] PHP Notice:  Trying to get property 'role_id' of non-object in C:\xampp\htdocs\my.com\app\Views\admin\users\create.php on line 92
+[29-Oct-2020 11:47:44 Europe/Kiev] PHP Notice:  Undefined variable: user in C:\xampp\htdocs\my.com\app\Views\admin\users\create.php on line 93
+[29-Oct-2020 11:47:44 Europe/Kiev] PHP Notice:  Trying to get property 'first_name' of non-object in C:\xampp\htdocs\my.com\app\Views\admin\users\create.php on line 93
+[29-Oct-2020 11:47:44 Europe/Kiev] PHP Notice:  Undefined variable: user in C:\xampp\htdocs\my.com\app\Views\admin\users\create.php on line 94
+[29-Oct-2020 11:47:44 Europe/Kiev] PHP Notice:  Trying to get property 'last_name' of non-object in C:\xampp\htdocs\my.com\app\Views\admin\users\create.php on line 94
+[29-Oct-2020 11:47:44 Europe/Kiev] PHP Notice:  Undefined variable: user in C:\xampp\htdocs\my.com\app\Views\admin\users\create.php on line 95
+[29-Oct-2020 11:47:44 Europe/Kiev] PHP Notice:  Trying to get property 'phone_number' of non-object in C:\xampp\htdocs\my.com\app\Views\admin\users\create.php on line 95
+[29-Oct-2020 11:48:01 Europe/Kiev] PHP Notice:  Undefined variable: categories in C:\xampp\htdocs\my.com\app\Views\admin\users\create.php on line 41
+[29-Oct-2020 11:48:01 Europe/Kiev] PHP Notice:  Undefined variable: brands in C:\xampp\htdocs\my.com\app\Views\admin\users\create.php on line 54
+[29-Oct-2020 11:48:01 Europe/Kiev] PHP Notice:  Undefined variable: user in C:\xampp\htdocs\my.com\app\Views\admin\users\create.php on line 96
+[29-Oct-2020 11:48:01 Europe/Kiev] PHP Notice:  Trying to get property 'password' of non-object in C:\xampp\htdocs\my.com\app\Views\admin\users\create.php on line 96
+[29-Oct-2020 11:48:01 Europe/Kiev] PHP Notice:  Undefined variable: user in C:\xampp\htdocs\my.com\app\Views\admin\users\create.php on line 97
+[29-Oct-2020 11:48:01 Europe/Kiev] PHP Notice:  Trying to get property 'role_id' of non-object in C:\xampp\htdocs\my.com\app\Views\admin\users\create.php on line 97
+[29-Oct-2020 11:48:01 Europe/Kiev] PHP Notice:  Undefined variable: user in C:\xampp\htdocs\my.com\app\Views\admin\users\create.php on line 99
+[29-Oct-2020 11:48:01 Europe/Kiev] PHP Notice:  Trying to get property 'phone_number' of non-object in C:\xampp\htdocs\my.com\app\Views\admin\users\create.php on line 99
+[29-Oct-2020 11:52:22 Europe/Kiev] PHP Notice:  Undefined variable: user in C:\xampp\htdocs\my.com\app\Views\admin\users\create.php on line 69
+[29-Oct-2020 11:52:22 Europe/Kiev] PHP Notice:  Trying to get property 'phone_number' of non-object in C:\xampp\htdocs\my.com\app\Views\admin\users\create.php on line 69
+[29-Oct-2020 11:53:28 Europe/Kiev] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'field list'
+[29-Oct-2020 11:55:50 Europe/Kiev] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'field list'
+[29-Oct-2020 12:08:40 Europe/Kiev] PHP Notice:  Undefined variable: user in C:\xampp\htdocs\my.com\app\Controllers\Admin\UserController.php on line 23
+[29-Oct-2020 12:08:52 Europe/Kiev] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'name' cannot be null
+[29-Oct-2020 12:08:52 Europe/Kiev] PHP Notice:  Undefined variable: user in C:\xampp\htdocs\my.com\app\Controllers\Admin\UserController.php on line 37
+[29-Oct-2020 12:14:12 Europe/Kiev] PHP Notice:  Undefined variable: user in C:\xampp\htdocs\my.com\app\Controllers\Admin\UserController.php on line 23
+[29-Oct-2020 12:15:17 Europe/Kiev] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'name' cannot be null
+[29-Oct-2020 12:15:17 Europe/Kiev] PHP Notice:  Undefined variable: user in C:\xampp\htdocs\my.com\app\Controllers\Admin\UserController.php on line 37
+[29-Oct-2020 12:32:43 Europe/Kiev] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'name' cannot be null
+[29-Oct-2020 12:32:43 Europe/Kiev] PHP Notice:  Undefined variable: user in C:\xampp\htdocs\my.com\app\Controllers\Admin\UserController.php on line 39
+[29-Oct-2020 12:37:41 Europe/Kiev] PHP Notice:  Undefined variable: user in C:\xampp\htdocs\my.com\app\Controllers\Admin\UserController.php on line 18
+[29-Oct-2020 12:38:20 Europe/Kiev] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'name' cannot be null
+[29-Oct-2020 12:38:20 Europe/Kiev] PHP Notice:  Undefined variable: user in C:\xampp\htdocs\my.com\app\Controllers\Admin\UserController.php on line 40
+[29-Oct-2020 13:13:37 Europe/Kiev] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'name' cannot be null
+[29-Oct-2020 13:13:37 Europe/Kiev] PHP Notice:  Undefined variable: user in C:\xampp\htdocs\my.com\app\Controllers\Admin\UserController.php on line 40
+[29-Oct-2020 13:33:18 Europe/Kiev] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'name' cannot be null
+[29-Oct-2020 13:33:18 Europe/Kiev] PHP Notice:  Undefined variable: user in C:\xampp\htdocs\my.com\app\Controllers\Admin\UserController.php on line 40
+[29-Oct-2020 13:36:39 Europe/Kiev] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'name' cannot be null
+[29-Oct-2020 13:36:39 Europe/Kiev] PHP Notice:  Undefined variable: user in C:\xampp\htdocs\my.com\app\Controllers\Admin\UserController.php on line 40
+[29-Oct-2020 13:53:35 Europe/Kiev] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'name' cannot be null
+[29-Oct-2020 13:53:59 Europe/Kiev] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'name' cannot be null
+[29-Oct-2020 13:54:19 Europe/Kiev] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'name' cannot be null
+[29-Oct-2020 13:55:56 Europe/Kiev] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'name' cannot be null
+[29-Oct-2020 13:56:07 Europe/Kiev] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'name' cannot be null
+[29-Oct-2020 13:56:22 Europe/Kiev] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'name' cannot be null
+[29-Oct-2020 13:58:28 Europe/Kiev] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'role' in 'field list'
+[29-Oct-2020 14:12:00 Europe/Kiev] PHP Notice:  Undefined variable: product in C:\xampp\htdocs\my.com\app\Views\admin\users\index.php on line 33
+[29-Oct-2020 14:12:00 Europe/Kiev] PHP Notice:  Trying to get property 'status' of non-object in C:\xampp\htdocs\my.com\app\Views\admin\users\index.php on line 33
+[29-Oct-2020 14:20:24 Europe/Kiev] PHP Notice:  Undefined variable: hash in C:\xampp\htdocs\my.com\app\Controllers\Admin\UserController.php on line 61
+[29-Oct-2020 14:26:07 Europe/Kiev] PHP Notice:  compact(): Undefined variable: title in C:\xampp\htdocs\my.com\app\Controllers\Admin\UserController.php on line 45
+[29-Oct-2020 14:26:07 Europe/Kiev] PHP Notice:  compact(): Undefined variable: roles in C:\xampp\htdocs\my.com\app\Controllers\Admin\UserController.php on line 45
+[29-Oct-2020 14:26:07 Europe/Kiev] PHP Notice:  Undefined variable: title in C:\xampp\htdocs\my.com\app\Views\admin\users\show.php on line 4
+[29-Oct-2020 14:26:07 Europe/Kiev] PHP Notice:  Undefined variable: roles in C:\xampp\htdocs\my.com\app\Views\admin\users\show.php on line 45
+[29-Oct-2020 14:26:07 Europe/Kiev] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\my.com\app\Views\admin\users\show.php on line 45
+[29-Oct-2020 14:27:48 Europe/Kiev] PHP Notice:  compact(): Undefined variable: title in C:\xampp\htdocs\my.com\app\Controllers\Admin\UserController.php on line 45
+[29-Oct-2020 14:27:48 Europe/Kiev] PHP Notice:  compact(): Undefined variable: users in C:\xampp\htdocs\my.com\app\Controllers\Admin\UserController.php on line 45
+[29-Oct-2020 14:27:48 Europe/Kiev] PHP Notice:  Undefined variable: title in C:\xampp\htdocs\my.com\app\Views\admin\users\show.php on line 4
+[29-Oct-2020 14:27:48 Europe/Kiev] PHP Notice:  Undefined variable: user in C:\xampp\htdocs\my.com\app\Views\admin\users\show.php on line 4
+[29-Oct-2020 14:27:48 Europe/Kiev] PHP Notice:  Trying to get property 'name' of non-object in C:\xampp\htdocs\my.com\app\Views\admin\users\show.php on line 4
+[29-Oct-2020 14:27:48 Europe/Kiev] PHP Notice:  Undefined variable: user in C:\xampp\htdocs\my.com\app\Views\admin\users\show.php on line 10
+[29-Oct-2020 14:27:48 Europe/Kiev] PHP Notice:  Trying to get property 'id' of non-object in C:\xampp\htdocs\my.com\app\Views\admin\users\show.php on line 10
+[29-Oct-2020 14:27:48 Europe/Kiev] PHP Notice:  Undefined variable: user in C:\xampp\htdocs\my.com\app\Views\admin\users\show.php on line 11
+[29-Oct-2020 14:27:48 Europe/Kiev] PHP Notice:  Trying to get property 'id' of non-object in C:\xampp\htdocs\my.com\app\Views\admin\users\show.php on line 11
+[29-Oct-2020 14:27:48 Europe/Kiev] PHP Notice:  Undefined variable: user in C:\xampp\htdocs\my.com\app\Views\admin\users\show.php on line 15
+[29-Oct-2020 14:27:48 Europe/Kiev] PHP Notice:  Trying to get property 'name' of non-object in C:\xampp\htdocs\my.com\app\Views\admin\users\show.php on line 15
+[29-Oct-2020 14:27:48 Europe/Kiev] PHP Notice:  Undefined variable: user in C:\xampp\htdocs\my.com\app\Views\admin\users\show.php on line 20
+[29-Oct-2020 14:27:48 Europe/Kiev] PHP Notice:  Trying to get property 'first_name' of non-object in C:\xampp\htdocs\my.com\app\Views\admin\users\show.php on line 20
+[29-Oct-2020 14:27:48 Europe/Kiev] PHP Notice:  Undefined variable: user in C:\xampp\htdocs\my.com\app\Views\admin\users\show.php on line 25
+[29-Oct-2020 14:27:48 Europe/Kiev] PHP Notice:  Trying to get property 'last_name' of non-object in C:\xampp\htdocs\my.com\app\Views\admin\users\show.php on line 25
+[29-Oct-2020 14:27:48 Europe/Kiev] PHP Notice:  Undefined variable: user in C:\xampp\htdocs\my.com\app\Views\admin\users\show.php on line 30
+[29-Oct-2020 14:27:48 Europe/Kiev] PHP Notice:  Trying to get property 'email' of non-object in C:\xampp\htdocs\my.com\app\Views\admin\users\show.php on line 30
+[29-Oct-2020 14:27:48 Europe/Kiev] PHP Notice:  Undefined variable: user in C:\xampp\htdocs\my.com\app\Views\admin\users\show.php on line 35
+[29-Oct-2020 14:27:48 Europe/Kiev] PHP Notice:  Trying to get property 'password' of non-object in C:\xampp\htdocs\my.com\app\Views\admin\users\show.php on line 35
+[29-Oct-2020 14:27:48 Europe/Kiev] PHP Notice:  Undefined variable: user in C:\xampp\htdocs\my.com\app\Views\admin\users\show.php on line 40
+[29-Oct-2020 14:27:48 Europe/Kiev] PHP Notice:  Trying to get property 'status' of non-object in C:\xampp\htdocs\my.com\app\Views\admin\users\show.php on line 40
+[29-Oct-2020 14:27:48 Europe/Kiev] PHP Notice:  Undefined variable: roles in C:\xampp\htdocs\my.com\app\Views\admin\users\show.php on line 45
+[29-Oct-2020 14:27:48 Europe/Kiev] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\my.com\app\Views\admin\users\show.php on line 45
+[29-Oct-2020 14:27:48 Europe/Kiev] PHP Notice:  Undefined variable: user in C:\xampp\htdocs\my.com\app\Views\admin\users\show.php on line 58
+[29-Oct-2020 14:27:48 Europe/Kiev] PHP Notice:  Trying to get property 'phone_number' of non-object in C:\xampp\htdocs\my.com\app\Views\admin\users\show.php on line 58
+[29-Oct-2020 14:35:34 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to undefined method UserController::getById() in C:\xampp\htdocs\my.com\core\Router.php:60
+Stack trace:
+#0 C:\xampp\htdocs\my.com\core\Router.php(35): Router->init('C:\\xampp\\htdocs...', Object(UserController), 'getById', Array)
+#1 C:\xampp\htdocs\my.com\bootstrap\app.php(44): Router->run('admin/users/sho...', 'GET')
+#2 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\my.com\core\Router.php on line 60
+[29-Oct-2020 15:23:10 Europe/Kiev] PHP Notice:  Undefined property: stdClass::$name in C:\xampp\htdocs\my.com\app\Views\admin\users\edit.php on line 4
+[29-Oct-2020 15:24:17 Europe/Kiev] PHP Notice:  Undefined property: stdClass::$name in C:\xampp\htdocs\my.com\app\Views\admin\users\edit.php on line 4
+[29-Oct-2020 15:25:46 Europe/Kiev] PHP Notice:  Undefined variable: hash in C:\xampp\htdocs\my.com\app\Controllers\Admin\UserController.php on line 65
+[30-Oct-2020 11:27:07 Europe/Kiev] PHP Warning:  include_once(C:\xampp\htdocs\my.com/app/Views/auth/index.php): failed to open stream: No such file or directory in C:\xampp\htdocs\my.com\app\Views\layouts\auth.php on line 30
+[30-Oct-2020 11:27:07 Europe/Kiev] PHP Warning:  include_once(): Failed opening 'C:\xampp\htdocs\my.com/app/Views/auth/index.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\my.com\app\Views\layouts\auth.php on line 30
+[30-Oct-2020 11:27:49 Europe/Kiev] PHP Warning:  include_once(C:\xampp\htdocs\my.com/app/Views/layouts/registration.php): failed to open stream: No such file or directory in C:\xampp\htdocs\my.com\core\View.php on line 9
+[30-Oct-2020 11:27:49 Europe/Kiev] PHP Warning:  include_once(): Failed opening 'C:\xampp\htdocs\my.com/app/Views/layouts/registration.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\my.com\core\View.php on line 9
+[30-Oct-2020 11:29:45 Europe/Kiev] PHP Warning:  include_once(C:\xampp\htdocs\my.com/app/Controllers\RegistrationController.php): failed to open stream: No such file or directory in C:\xampp\htdocs\my.com\core\Router.php on line 55
+[30-Oct-2020 11:29:45 Europe/Kiev] PHP Warning:  include_once(): Failed opening 'C:\xampp\htdocs\my.com/app/Controllers\RegistrationController.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\my.com\core\Router.php on line 55
+[30-Oct-2020 11:29:45 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'RegistrationController' not found in C:\xampp\htdocs\my.com\core\Router.php:56
+Stack trace:
+#0 C:\xampp\htdocs\my.com\core\Router.php(25): Router->init('C:\\xampp\\htdocs...', 'RegistrationCon...', 'signUpForm')
+#1 C:\xampp\htdocs\my.com\bootstrap\app.php(44): Router->run('signUp', 'GET')
+#2 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\my.com\core\Router.php on line 56
+[30-Oct-2020 11:31:23 Europe/Kiev] PHP Warning:  include_once(C:\xampp\htdocs\my.com/app/Controllers\RegistrationController.php): failed to open stream: No such file or directory in C:\xampp\htdocs\my.com\core\Router.php on line 55
+[30-Oct-2020 11:31:23 Europe/Kiev] PHP Warning:  include_once(): Failed opening 'C:\xampp\htdocs\my.com/app/Controllers\RegistrationController.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\my.com\core\Router.php on line 55
+[30-Oct-2020 11:31:23 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'RegistrationController' not found in C:\xampp\htdocs\my.com\core\Router.php:56
+Stack trace:
+#0 C:\xampp\htdocs\my.com\core\Router.php(25): Router->init('C:\\xampp\\htdocs...', 'RegistrationCon...', 'signUpForm')
+#1 C:\xampp\htdocs\my.com\bootstrap\app.php(44): Router->run('signUp', 'GET')
+#2 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\my.com\core\Router.php on line 56
+[30-Oct-2020 11:32:15 Europe/Kiev] PHP Warning:  include_once(C:\xampp\htdocs\my.com/app/Controllers\RegistrationController.php): failed to open stream: No such file or directory in C:\xampp\htdocs\my.com\core\Router.php on line 55
+[30-Oct-2020 11:32:15 Europe/Kiev] PHP Warning:  include_once(): Failed opening 'C:\xampp\htdocs\my.com/app/Controllers\RegistrationController.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\my.com\core\Router.php on line 55
+[30-Oct-2020 11:32:15 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'RegistrationController' not found in C:\xampp\htdocs\my.com\core\Router.php:56
+Stack trace:
+#0 C:\xampp\htdocs\my.com\core\Router.php(25): Router->init('C:\\xampp\\htdocs...', 'RegistrationCon...', 'signUpForm')
+#1 C:\xampp\htdocs\my.com\bootstrap\app.php(44): Router->run('signUp', 'GET')
+#2 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\my.com\core\Router.php on line 56
+[30-Oct-2020 11:33:12 Europe/Kiev] PHP Warning:  include_once(C:\xampp\htdocs\my.com/app/Controllers\RegistrationController.php): failed to open stream: No such file or directory in C:\xampp\htdocs\my.com\core\Router.php on line 55
+[30-Oct-2020 11:33:12 Europe/Kiev] PHP Warning:  include_once(): Failed opening 'C:\xampp\htdocs\my.com/app/Controllers\RegistrationController.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\my.com\core\Router.php on line 55
+[30-Oct-2020 11:33:12 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'RegistrationController' not found in C:\xampp\htdocs\my.com\core\Router.php:56
+Stack trace:
+#0 C:\xampp\htdocs\my.com\core\Router.php(25): Router->init('C:\\xampp\\htdocs...', 'RegistrationCon...', 'signUpForm')
+#1 C:\xampp\htdocs\my.com\bootstrap\app.php(44): Router->run('signUp', 'GET')
+#2 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\my.com\core\Router.php on line 56
+[30-Oct-2020 11:34:20 Europe/Kiev] PHP Warning:  include_once(C:\xampp\htdocs\my.com/app/Controllers\RegistrationController.php): failed to open stream: No such file or directory in C:\xampp\htdocs\my.com\core\Router.php on line 55
+[30-Oct-2020 11:34:20 Europe/Kiev] PHP Warning:  include_once(): Failed opening 'C:\xampp\htdocs\my.com/app/Controllers\RegistrationController.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\my.com\core\Router.php on line 55
+[30-Oct-2020 11:34:20 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'RegistrationController' not found in C:\xampp\htdocs\my.com\core\Router.php:56
+Stack trace:
+#0 C:\xampp\htdocs\my.com\core\Router.php(25): Router->init('C:\\xampp\\htdocs...', 'RegistrationCon...', 'signUpForm')
+#1 C:\xampp\htdocs\my.com\bootstrap\app.php(44): Router->run('signUp', 'GET')
+#2 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\my.com\core\Router.php on line 56
+[30-Oct-2020 15:33:38 Europe/Kiev] PHP Notice:  Undefined variable: title in C:\xampp\htdocs\my.com\app\Views\layouts\app.php on line 6
+[30-Oct-2020 15:35:57 Europe/Kiev] PHP Notice:  Undefined variable: title in C:\xampp\htdocs\my.com\app\Views\layouts\app.php on line 6
+[30-Oct-2020 15:35:57 Europe/Kiev] PHP Notice:  Undefined variable: title in C:\xampp\htdocs\my.com\app\Views\signup\index.php on line 2
+[30-Oct-2020 15:36:08 Europe/Kiev] PHP Notice:  Undefined variable: title in C:\xampp\htdocs\my.com\app\Views\layouts\app.php on line 6
+[30-Oct-2020 15:36:08 Europe/Kiev] PHP Notice:  Undefined variable: title in C:\xampp\htdocs\my.com\app\Views\signup\index.php on line 2
+[30-Oct-2020 15:36:21 Europe/Kiev] PHP Notice:  Undefined variable: title in C:\xampp\htdocs\my.com\app\Views\layouts\app.php on line 6
+[30-Oct-2020 15:36:21 Europe/Kiev] PHP Notice:  Undefined variable: title in C:\xampp\htdocs\my.com\app\Views\signup\index.php on line 2

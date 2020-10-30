@@ -35,7 +35,7 @@
   }
   .row-form{
     background-color: transparent;
-    display: flex;
+    /* display: flex; */
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
@@ -157,7 +157,7 @@ input[type="button"].btn-block {
 }
 .btn-block {
   display: inline-block;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .btn-block+.btn-block {

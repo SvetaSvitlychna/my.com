@@ -33,17 +33,41 @@ $router->post('admin/brands/update/{id}' , 'Admin\BrandController@patch');
 $router->get('admin/brands/delete/{id}' , 'Admin\BrandController@delete');
 $router->post('admin/brands/destroy/{id}' , 'Admin\BrandController@destroy');
 
+
+$router->get('admin/roles', 'Admin\RoleController@index');
+$router->get('admin/roles/create', 'Admin\RoleController@create');
+$router->post('admin/roles/store', 'Admin\RoleController@store');
+$router->get('admin/roles/show/{id}' , 'Admin\RoleController@show');
+$router->get('admin/roles/edit/{id}' , 'Admin\RoleController@edit');
+$router->post('admin/roles/update/{id}' , 'Admin\RoleController@patch');
+$router->get('admin/roles/delete/{id}' , 'Admin\RoleController@delete');
+$router->post('admin/roles/destroy/{id}' , 'Admin\RoleController@destroy');
+
+$router->get('admin/users' , 'Admin\UserController@index');
+$router->get('admin/users/create' ,'Admin\UserController@create');
+$router->post('admin/users/store' , 'Admin\UserController@store');
+$router->get('admin/users/show/{id}', 'Admin\UserController@show');
+$router->get('admin/users/edit/{id}' ,'Admin\UserController@edit');
+$router->post('admin/users/update/{id}', 'Admin\UserController@patch');
+$router->get('admin/users/delete/{id}', 'Admin\UserController@delete');
+$router->post('admin/users/destroy/{id}' , 'Admin\UserController@destroy');
     // 'admin/config' => 'Admin\ConfigController@index',
 $router->get('' , 'HomeController@index');
 
 
 $router->get('api/products','HomeController@getProducts');
 $router->get('api/categories','HomeController@getCategories');
+//  $router->get('api/shop/{id}', 'HomeController@getProduct');
+//  $router->get('api/product/{id}', 'HomeController@getProductItem');
 
 
-// // $router->get('api/products', 'HomeController@getProducts');
-// // $router->get('api/categories', 'HomeController@getCategories');
-// // $router->get('api/shop/{id}', 'HomeController@getProduct');
-// // $router->get('api/product/{id}', 'HomeController@getProductItem');
+$router->get('signUp', 'SignupController@signUpForm');
+$router->get('login', 'LoginController@signInForm');
+$router->get('profile', 'ProfileController@index');
+$router->post('register', 'AuthController@signUp');
 
-// $router->get('api/categories/{id}', 'HomeController@getProductsByCategory');
+$router->get('logout', 'AuthController@logout');
+
+
+
+

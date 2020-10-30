@@ -26,9 +26,21 @@ static getStorageItem (key){
 }
 }
 
+// class Product {
+//     getProducts(newproduct){
+//         return newproduct.map(item => {
+//             const name= item.name;
+//             const price =item.price;
+//             const id= item.id;
+//             const image =item.image;
+//             const category = item.category;
+//             return {id,name, price, image, category};
+//         });
+//     }
+// }
 class Product {
-    makeModel(products){
-        return products.map(item => {
+    makeModel(newproduct){
+        return newproduct.map(item => {
             const name= item.name;
             const price =item.price;
             const id= item.id;
@@ -170,6 +182,16 @@ newproduct.forEach(item=> {result+=this.createProductMarkUp(item);
 });
 document.querySelector('.showcase').innerHTML = result;
 }
+
+// makeShowCase(product){
+//     if (!document.querySelector('.showcase')){
+//         return;
+//     }
+//     let result = '';
+// product.forEach(item=> {result+=this.createProductMarkUp(item);
+// });
+// document.querySelector('.showcase').innerHTML = result;
+// }
 createProductMarkUp(data){
     return`
     <div  class="col-md-3 col-xl-3 col-lg-4 col-sm-6 cartItem">
@@ -374,39 +396,39 @@ function navbarNav(className, url, icon, capture=''){
 
 //=========
 (function(){
-    const app =new App();
+const app =new App();
     if (document.querySelector('.collections')){
         app.fetchData('categories',new Category());
         app.makeCategories(Storage.getStorageItem('categories'));
     }
-    
+   
 
-document.querySelector('.navbar-nav').innerHTML =
-`${navbarNav('', '/', 'fa-home', 'Home')}
-${navbarNav('','/about','fa-book-open', 'About' )}
-${navbarNav('','/catalog', 'fa-blog','Catalog')}
-${navbarNav('','/SignUp', 'fa-address-card','Sign up')}`;
+    document.querySelector('.navbar-nav').innerHTML =
+    `${navbarNav('', '/', 'fa-home', 'Home')}
+    ${navbarNav('','/about','fa-book-open', 'About' )}
+    ${navbarNav('','/catalog', 'fa-blog','Catalog')}
+    ${navbarNav('','/signUp', 'fa-address-card','Sign Up')}`;
 
 
-document.querySelector('.footer-service').innerHTML =
-`${footerService('#','Help')}
-${footerService('#','FAQs')}
-${footerService('#','Returns')}
-${footerService('#','Refund')}
-${footerService('#','Delivery')}`;
+    document.querySelector('.footer-service').innerHTML =
+    `${footerService('#','Help')}
+    ${footerService('#','FAQs')}
+    ${footerService('#','Returns')}
+    ${footerService('#','Refund')}
+    ${footerService('#','Delivery')}`;
 
-document.querySelector('.footer-contact').innerHTML =
- `${footerContact('message','/contact','fas fa-comment-dots','Leave a message')}
-${footerContact('email','','fas fa-envelope','test@test.com')}
-${footerContact('phone','','fas fa-phone','+38 000 000 00 00')}
-${footerContact('viber','','fab fa-viber', '+38 000 111 11 11')}
-${footerContact('telegram','','fab fa-telegram', '+38 000 111 11 11')}`;
-
+    document.querySelector('.footer-contact').innerHTML =
+    `${footerContact('message','/contact','fas fa-comment-dots','Leave a message')}
+    ${footerContact('email','','fas fa-envelope','test@test.com')}
+    ${footerContact('phone','','fas fa-phone','+38 000 000 00 00')}
+    ${footerContact('viber','','fab fa-viber', '+38 000 111 11 11')}
+    ${footerContact('telegram','','fab fa-telegram', '+38 000 111 11 11')}`;
 
     app.fetchData("products", new Product());
     app.makeShowcase(Storage.getStorageItem("products"));
     app.addToCarts();
     app.renderCart();
-    app.renderCategory();
+    app.renderCategory(); 
+    
 })();
 
