@@ -1,87 +1,95 @@
 <?php
-require_once CORE.'/Controller.php';
-require_once CORE.'/Request.php';
+
 require_once MODELS.'/User.php';
+require_once CORE.'/Session.php';
+require_once CORE.'/Controller.php';
+require_once CORE.'/Auth.php';
 
 
+class LoginController extends Controller
+{
+    private $logged_in = false;
+    private $email;
+    private $user_id;
 
-class LoginController extends Controller{
-
-   private $costs =[
-       'cost' => 12
-   ];
-   public function signInForm()
-   {
-      $this->view->render('login/index', ['title'=> 'Login'], 'app');
-   } 
-  
-   public function create (){
-        $title ='Add New User';
-        $roles = Role::all();
-        $this->view->render('admin/users/create', compact 
-        ('title', 'roles'), 'admin');   
-   }   
+    private $costs = [
+        'cost' => 12,
+    ];
    
-   public function store (){
-      $request = new Request();
-      $status = $request->status ? 1:0;
-      $hash = password_hash($request->password,
-       PASSWORD_BCRYPT, $this->costs);
-      (new User())::save([     
-      "first_name"=>$request->first_name,  
-      "last_name"=>$request->last_name,
-      "email"=>$request->email,
-      "password"=>$hash,
-      "email"=>$request->email,
-      "role_id"=>$request->role_id,"status"=>$status]);
-       header ('Location: /admin/users');
-   }   
-   public function show($vars){
-      extract ($vars);
-      $user = (new User())->getById($id);
-      var_dump($user);
-      
-        
-   }
-   public function edit($vars){
-      extract ($vars);
-      $user = (new User())->getById($id);
-      $roles = Role::all();
-      $title ='Edit User';
-      $this->view-> render('admin/users/edit', 
-      compact ('title', 'user', 'roles'), 'admin');
-   }
-   
-   public function patch($vars){
-      extract ($vars);
-      $request = new Request();
-      // var_dump($request->getRequest());
-      $status = $request->status ? 1:0;
-      (new User())->update($id,["first_name"=>$request->first_name,  
-      "last_name"=>$request->last_name,
-      "email"=>$request->email,
-      "password"=>$hash,
-      "email"=>$request->email,
-      "role_id"=>$request->role_id,"status"=>$status]);
-      header ('Location: /admin/users');     
-   }   
-   public function delete($vars)
-   {
-      extract($vars);
-      $title = 'Delete User ';
-      $user = (new User())->getById($id);
-      $this->view->render('admin/users/delete', compact('title',
-      'user'), 'admin');
-   }
-   public function destroy(){
-      $request = new Request();
-      if (isset($_POST['submit'])) {
-         (new User())::destroy($request->id);
-         header('Location: /admin/users');
-      } else {
-            header('Location: /admin/users');
+    private $error = NULL;
+    private $message = NULL;
+    public $user = NULL;
+  	private $cookie_prefix = '';
+	    
+    public function __construct()
+	{
+        parent::__construct();
+        $session_id = Session::init();
+		
+        if($userId=Session::get('userId')){
+            $this->user = User::getByID($userId);
+            if( $this->user != NULL )
+                $this->logged_in = true;
+                $this->user_id = $userId;
+		}
+		
+				if($this->logged_in === false && isset($_COOKIE[$this->cookie_prefix.'ID'])){
+			$id = intval($_COOKIE[$this->cookie_prefix.'ID']);
+			$email = strval($_COOKIE[ $this->cookie_prefix.'UserEmail']);
+							
+			if($id && $email)
+                $this->signin();
+		}
+	}
+
+
+    public function signInForm()
+    {
+        $this->view->render('login/index', ['title'=> 'Login'], 'app');
+    }
+
+    
+    function signin()
+	{
+        if ($this->logged_in === true) {
+            header('Location: /profile'); 
         }
-   }
-
+        $request = new Request();
+        $userId = (new User())::checkUser($request->email, $request->password);
+        if ($userId === false) {
+            $this->error = "Пользователя с таким email или паролем не существует";
+            Session::set('error', $this->error);
+            header('Location: /');
+        } else {
+            $this->user = User::getByID($userId);
+            $this->logged_in = true;
+            $this->message = "You Are Logged";
+            Session::set('success', $this->message);
+            Session::set('userId', $this->user->id);
+            setcookie($this->cookie_prefix.'Logged', $this->logged_in); 
+ 
+            $remember_me = $request->remember_me ? 1:0;
+            if($remember_me && !isset($_COOKIE[$this->cookie_prefix.'ID'])){
+                setcookie($this->cookie_prefix.'ID', $this->user->id, TIME_NOW + COOKIE_TIMEOUT, ''); 
+                setcookie($this->cookie_prefix.'UserEmail', $this->user->email, TIME_NOW + COOKIE_TIMEOUT, ''); 
+            }
+            header('Location: /profile'); 
+        }
+	}
+    
+    function logout()
+	{
+	
+        if( isset($_COOKIE[$this->cookie_prefix.'ID']) )
+		{	
+			
+			setcookie( $this->cookie_prefix.'ID', '', TIME_NOW - 3600 );	
+			setcookie( $this->cookie_prefix.'UserEmail', '', TIME_NOW - 3600 ); 
+            setcookie($this->cookie_prefix.'Logged', '', TIME_NOW - 3600); 
+		}
+        Session::destroy('userId');
+        $this->logged_in = FALSE;
+        setcookie($this->cookie_prefix.'Logged', $this->logged_in, TIME_NOW - 3600); 
+		Helper::redirect('/');
+    }
 }
-

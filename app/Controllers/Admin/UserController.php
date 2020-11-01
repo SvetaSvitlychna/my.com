@@ -59,6 +59,8 @@ class UserController extends Controller{
       $request = new Request();
       // var_dump($request->getRequest());
       $status = $request->status ? 1:0;
+      $hash = password_hash($request->password,
+       PASSWORD_BCRYPT, $this->costs);
       (new User())->update($id,["first_name"=>$request->first_name,  
       "last_name"=>$request->last_name,
       "email"=>$request->email,

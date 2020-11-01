@@ -12,6 +12,7 @@
    <?php require_once VIEWS.'/layouts/partials/_sidebar.php';?>
 
 
+
     <?php include_once VIEWS.'/'.$template;?> 
 
     <?php require_once VIEWS.'/layouts/partials/_footer.php';?>

@@ -63,10 +63,11 @@ $router->get('api/categories','HomeController@getCategories');
 
 $router->get('signUp', 'SignupController@signUpForm');
 $router->get('login', 'LoginController@signInForm');
+$router->post('login', 'LoginController@signin');
 $router->get('profile', 'ProfileController@index');
-$router->post('register', 'AuthController@signUp');
+$router->post('signup', 'SignupController@signup');
 
-$router->get('logout', 'AuthController@logout');
+$router->get('logout', 'LoginController@logout');
 
 
 

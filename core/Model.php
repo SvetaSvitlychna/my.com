@@ -13,7 +13,7 @@ require_once CORE.'/Connection.php';
         return $stmt->fetchAll();
     
         }
-    public function getById($id){
+    public static function getById($id){
         $stmt = Connection::connect()->preparedStmt("SELECT * FROM ".
         static::$table." WHERE ".static::$pk."=".$id);
         $stmt->execute();
@@ -69,6 +69,12 @@ require_once CORE.'/Connection.php';
         $stmt = $pdo->preparedStmt($sql);
         $stmt ->execute(); 
         return $stmt->fetchAll();
+    }
+    public static function getOne($sql){
+        $pdo = Connection::connect();
+        $stmt = $pdo->preparedStmt($sql);
+        $stmt->execute();
+        return $stmt->fetch(PDO::FETCH_OBJ);
     }
 }
    

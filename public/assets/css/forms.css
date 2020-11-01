@@ -35,7 +35,14 @@
   }
   .row-form{
     background-color: transparent;
-    /* display: flex; */
+    /* display: table-caption; */
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  .row-profile{
+    background-color: transparent;
+     display: table-caption; 
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;

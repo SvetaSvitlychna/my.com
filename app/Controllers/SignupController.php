@@ -1,87 +1,79 @@
 <?php
 require_once CORE.'/Controller.php';
-require_once CORE.'/Request.php';
+require_once CORE.'/Session.php';
 require_once MODELS.'/User.php';
-
+require_once CORE.'/Auth.php';
 
 class SignupController extends Controller{
 
    private $costs =[
        'cost' => 12
    ];
+   private $logged_in = false;
+   private $email;
+   private $user_id;
+
+   private $error = null;
+   private $message = null;
+   private $user = null;
+   private $cookie_prefix = '';
+
    public function signUpForm()
    {
       $this->view->render('signup/index', ['title'=> 'Sign Up'], 'app');
    }
 
-
-   public function create (){
-        $title ='Add New User';
-        $roles = Role::all();
-        $this->view->render('admin/users/create', compact 
-        ('title', 'roles'), 'admin');   
-   }   
-   
-   public function store (){
-      $request = new Request();
-      $status = $request->status ? 1:0;
-      $hash = password_hash($request->password,
-       PASSWORD_BCRYPT, $this->costs);
-      (new User())::save([     
-      "first_name"=>$request->first_name,  
-      "last_name"=>$request->last_name,
-      "email"=>$request->email,
-      "password"=>$hash,
-      "email"=>$request->email,
-      "role_id"=>$request->role_id,"status"=>$status]);
-       header ('Location: /admin/users');
-   }   
-   public function show($vars){
-      extract ($vars);
-      $user = (new User())->getById($id);
-      var_dump($user);
-      
+      public function signup()
+    {
+        $request = new Request();
+        $password = $request->password;
+        $confirmpassword = $request->confirmpassword;
         
-   }
-   public function edit($vars){
-      extract ($vars);
-      $user = (new User())->getById($id);
-      $roles = Role::all();
-      $title ='Edit User';
-      $this->view-> render('admin/users/edit', 
-      compact ('title', 'user', 'roles'), 'admin');
-   }
-   
-   public function patch($vars){
-      extract ($vars);
-      $request = new Request();
-      // var_dump($request->getRequest());
-      $status = $request->status ? 1:0;
-      (new User())->update($id,["first_name"=>$request->first_name,  
-      "last_name"=>$request->last_name,
-      "email"=>$request->email,
-      "password"=>$hash,
-      "email"=>$request->email,
-      "role_id"=>$request->role_id,"status"=>$status]);
-      header ('Location: /admin/users');     
-   }   
-   public function delete($vars)
-   {
-      extract($vars);
-      $title = 'Delete User ';
-      $user = (new User())->getById($id);
-      $this->view->render('admin/users/delete', compact('title',
-      'user'), 'admin');
-   }
-   public function destroy(){
-      $request = new Request();
-      if (isset($_POST['submit'])) {
-         (new User())::destroy($request->id);
-         header('Location: /admin/users');
-      } else {
-            header('Location: /admin/users');
+        if (self::is_valid_passwords($password, $confirmpassword)){
+            list($first_name, $last_name, $domain) = explode('@', $request->email);
+            $hash = password_hash($password, PASSWORD_BCRYPT, $this->costs);
+            (new User())::save([    
+               "first_name"=>$request->first_name,  
+               "last_name"=>$request->last_name,
+               "email"=>$request->email,
+               "password"=>$hash,
+               "email"=>$request->email,
+               "phone_number"=>$request->phone_number]);
+            header('Location: /sigin');
+        } else {
+            $this->error = "Your passwords do not match. Please type carefully.";
+            Session::set('error', $this->error);
+            header('Location: /signup');
         }
-   }
+    }
+
+ 
+    static private function is_valid_passwords($password, $confirmpassword) 
+    {
+       
+        if ($password != $confirmpassword) {
+            return false;
+        }
+    
+        return true;
+    }
+    function logout()
+    {
+     
+         if( isset($_COOKIE[$this->cookie_prefix.'ID']) )
+       {	
+          
+          setcookie( $this->cookie_prefix.'ID', '', TIME_NOW - 3600 );	
+          setcookie( $this->cookie_prefix.'UserEmail', '', TIME_NOW - 3600 ); 
+             setcookie($this->cookie_prefix.'Logged', '', TIME_NOW - 3600); 
+       }
+         Session::destroy('userId');
+         $this->logged_in = FALSE;
+         setcookie($this->cookie_prefix.'Logged', $this->logged_in, TIME_NOW - 3600); 
+       Helper::redirect('/');
+     }
+
+   
 
 }
 

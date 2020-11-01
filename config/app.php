@@ -16,4 +16,10 @@ const DB_CONFIG_FILE = CONFIG.'/db.php';
 
 define('ROUTES', CONFIG.'/routes.php');
 
+const SESSION_PREFIX = 'shop_';
+
+
+define( 'COOKIE_TIMEOUT', (52*7*60*60) ); 
+
+if( !defined( 'TIME_NOW' ) ) define( 'TIME_NOW', time() );
 

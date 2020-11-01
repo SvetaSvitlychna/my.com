@@ -5165,3 +5165,474 @@ Stack trace:
 [30-Oct-2020 15:36:08 Europe/Kiev] PHP Notice:  Undefined variable: title in C:\xampp\htdocs\my.com\app\Views\signup\index.php on line 2
 [30-Oct-2020 15:36:21 Europe/Kiev] PHP Notice:  Undefined variable: title in C:\xampp\htdocs\my.com\app\Views\layouts\app.php on line 6
 [30-Oct-2020 15:36:21 Europe/Kiev] PHP Notice:  Undefined variable: title in C:\xampp\htdocs\my.com\app\Views\signup\index.php on line 2
+[31-Oct-2020 19:07:26 Europe/Kiev] PHP Warning:  Use of undefined constant SESSION_PREFIX - assumed 'SESSION_PREFIX' (this will throw an Error in a future version of PHP) in C:\xampp\htdocs\my.com\core\Session.php on line 29
+[31-Oct-2020 19:07:26 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to a member function render() on null in C:\xampp\htdocs\my.com\app\Controllers\LoginController.php:44
+Stack trace:
+#0 C:\xampp\htdocs\my.com\core\Router.php(60): LoginController->signInForm(Array)
+#1 C:\xampp\htdocs\my.com\core\Router.php(25): Router->init('C:\\xampp\\htdocs...', Object(LoginController), 'signInForm')
+#2 C:\xampp\htdocs\my.com\bootstrap\app.php(44): Router->run('login', 'GET')
+#3 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\my.com\app\Controllers\LoginController.php on line 44
+[31-Oct-2020 19:38:42 Europe/Kiev] PHP Warning:  Use of undefined constant SESSION_PREFIX - assumed 'SESSION_PREFIX' (this will throw an Error in a future version of PHP) in C:\xampp\htdocs\my.com\core\Session.php on line 29
+[31-Oct-2020 19:38:42 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to a member function render() on null in C:\xampp\htdocs\my.com\app\Controllers\LoginController.php:44
+Stack trace:
+#0 C:\xampp\htdocs\my.com\core\Router.php(60): LoginController->signInForm(Array)
+#1 C:\xampp\htdocs\my.com\core\Router.php(25): Router->init('C:\\xampp\\htdocs...', Object(LoginController), 'signInForm')
+#2 C:\xampp\htdocs\my.com\bootstrap\app.php(44): Router->run('login', 'GET')
+#3 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\my.com\app\Controllers\LoginController.php on line 44
+[31-Oct-2020 19:39:32 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to a member function render() on null in C:\xampp\htdocs\my.com\app\Controllers\LoginController.php:44
+Stack trace:
+#0 C:\xampp\htdocs\my.com\core\Router.php(60): LoginController->signInForm(Array)
+#1 C:\xampp\htdocs\my.com\core\Router.php(25): Router->init('C:\\xampp\\htdocs...', Object(LoginController), 'signInForm')
+#2 C:\xampp\htdocs\my.com\bootstrap\app.php(44): Router->run('login', 'GET')
+#3 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\my.com\app\Controllers\LoginController.php on line 44
+[31-Oct-2020 19:43:13 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to a member function render() on null in C:\xampp\htdocs\my.com\app\Controllers\LoginController.php:44
+Stack trace:
+#0 C:\xampp\htdocs\my.com\core\Router.php(60): LoginController->signInForm(Array)
+#1 C:\xampp\htdocs\my.com\core\Router.php(25): Router->init('C:\\xampp\\htdocs...', Object(LoginController), 'signInForm')
+#2 C:\xampp\htdocs\my.com\bootstrap\app.php(44): Router->run('login', 'GET')
+#3 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\my.com\app\Controllers\LoginController.php on line 44
+[31-Oct-2020 19:43:41 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to a member function render() on null in C:\xampp\htdocs\my.com\app\Controllers\LoginController.php:44
+Stack trace:
+#0 C:\xampp\htdocs\my.com\core\Router.php(60): LoginController->signInForm(Array)
+#1 C:\xampp\htdocs\my.com\core\Router.php(25): Router->init('C:\\xampp\\htdocs...', Object(LoginController), 'signInForm')
+#2 C:\xampp\htdocs\my.com\bootstrap\app.php(44): Router->run('login', 'GET')
+#3 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\my.com\app\Controllers\LoginController.php on line 44
+[31-Oct-2020 19:46:54 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to a member function render() on null in C:\xampp\htdocs\my.com\app\Controllers\LoginController.php:44
+Stack trace:
+#0 C:\xampp\htdocs\my.com\core\Router.php(60): LoginController->signInForm(Array)
+#1 C:\xampp\htdocs\my.com\core\Router.php(25): Router->init('C:\\xampp\\htdocs...', Object(LoginController), 'signInForm')
+#2 C:\xampp\htdocs\my.com\bootstrap\app.php(44): Router->run('login', 'GET')
+#3 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\my.com\app\Controllers\LoginController.php on line 44
+[31-Oct-2020 19:47:28 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to a member function render() on null in C:\xampp\htdocs\my.com\app\Controllers\LoginController.php:44
+Stack trace:
+#0 C:\xampp\htdocs\my.com\core\Router.php(60): LoginController->signInForm(Array)
+#1 C:\xampp\htdocs\my.com\core\Router.php(25): Router->init('C:\\xampp\\htdocs...', Object(LoginController), 'signInForm')
+#2 C:\xampp\htdocs\my.com\bootstrap\app.php(44): Router->run('login', 'GET')
+#3 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\my.com\app\Controllers\LoginController.php on line 44
+[31-Oct-2020 19:48:01 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to a member function render() on null in C:\xampp\htdocs\my.com\app\Controllers\LoginController.php:44
+Stack trace:
+#0 C:\xampp\htdocs\my.com\core\Router.php(60): LoginController->signInForm(Array)
+#1 C:\xampp\htdocs\my.com\core\Router.php(25): Router->init('C:\\xampp\\htdocs...', Object(LoginController), 'signInForm')
+#2 C:\xampp\htdocs\my.com\bootstrap\app.php(44): Router->run('login', 'GET')
+#3 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\my.com\app\Controllers\LoginController.php on line 44
+[31-Oct-2020 19:49:09 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to a member function render() on null in C:\xampp\htdocs\my.com\app\Controllers\LoginController.php:44
+Stack trace:
+#0 C:\xampp\htdocs\my.com\core\Router.php(60): LoginController->signInForm(Array)
+#1 C:\xampp\htdocs\my.com\core\Router.php(25): Router->init('C:\\xampp\\htdocs...', Object(LoginController), 'signInForm')
+#2 C:\xampp\htdocs\my.com\bootstrap\app.php(44): Router->run('login', 'GET')
+#3 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\my.com\app\Controllers\LoginController.php on line 44
+[31-Oct-2020 19:52:55 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to a member function render() on null in C:\xampp\htdocs\my.com\app\Controllers\LoginController.php:44
+Stack trace:
+#0 C:\xampp\htdocs\my.com\core\Router.php(60): LoginController->signInForm(Array)
+#1 C:\xampp\htdocs\my.com\core\Router.php(25): Router->init('C:\\xampp\\htdocs...', Object(LoginController), 'signInForm')
+#2 C:\xampp\htdocs\my.com\bootstrap\app.php(44): Router->run('login', 'GET')
+#3 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\my.com\app\Controllers\LoginController.php on line 44
+[31-Oct-2020 19:54:01 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to a member function render() on null in C:\xampp\htdocs\my.com\app\Controllers\LoginController.php:44
+Stack trace:
+#0 C:\xampp\htdocs\my.com\core\Router.php(60): LoginController->signInForm(Array)
+#1 C:\xampp\htdocs\my.com\core\Router.php(25): Router->init('C:\\xampp\\htdocs...', Object(LoginController), 'signInForm')
+#2 C:\xampp\htdocs\my.com\bootstrap\app.php(44): Router->run('login', 'GET')
+#3 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\my.com\app\Controllers\LoginController.php on line 44
+[31-Oct-2020 19:55:33 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to a member function render() on null in C:\xampp\htdocs\my.com\app\Controllers\LoginController.php:44
+Stack trace:
+#0 C:\xampp\htdocs\my.com\core\Router.php(60): LoginController->signInForm(Array)
+#1 C:\xampp\htdocs\my.com\core\Router.php(25): Router->init('C:\\xampp\\htdocs...', Object(LoginController), 'signInForm')
+#2 C:\xampp\htdocs\my.com\bootstrap\app.php(44): Router->run('login', 'GET')
+#3 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\my.com\app\Controllers\LoginController.php on line 44
+[31-Oct-2020 19:55:46 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'Helper' not found in C:\xampp\htdocs\my.com\app\Views\layouts\partials\_flash-message.php:5
+Stack trace:
+#0 C:\xampp\htdocs\my.com\app\Views\layouts\app.php(13): require_once()
+#1 C:\xampp\htdocs\my.com\core\View.php(9): include_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\my.com\app\Controllers\HomeController.php(11): View->render('home/index.php', Array)
+#3 C:\xampp\htdocs\my.com\core\Router.php(60): HomeController->index(Array)
+#4 C:\xampp\htdocs\my.com\core\Router.php(25): Router->init('C:\\xampp\\htdocs...', Object(HomeController), 'index')
+#5 C:\xampp\htdocs\my.com\bootstrap\app.php(44): Router->run('', 'GET')
+#6 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\my.com\app\Views\layouts\partials\_flash-message.php on line 5
+[31-Oct-2020 19:56:54 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'Helper' not found in C:\xampp\htdocs\my.com\app\Views\layouts\partials\_flash-message.php:5
+Stack trace:
+#0 C:\xampp\htdocs\my.com\app\Views\layouts\app.php(13): require_once()
+#1 C:\xampp\htdocs\my.com\core\View.php(9): include_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\my.com\app\Controllers\HomeController.php(11): View->render('home/index.php', Array)
+#3 C:\xampp\htdocs\my.com\core\Router.php(60): HomeController->index(Array)
+#4 C:\xampp\htdocs\my.com\core\Router.php(25): Router->init('C:\\xampp\\htdocs...', Object(HomeController), 'index')
+#5 C:\xampp\htdocs\my.com\bootstrap\app.php(44): Router->run('', 'GET')
+#6 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\my.com\app\Views\layouts\partials\_flash-message.php on line 5
+[31-Oct-2020 19:57:26 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'Helper' not found in C:\xampp\htdocs\my.com\app\Views\layouts\partials\_flash-message.php:5
+Stack trace:
+#0 C:\xampp\htdocs\my.com\app\Views\layouts\app.php(13): require_once()
+#1 C:\xampp\htdocs\my.com\core\View.php(9): include_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\my.com\app\Controllers\HomeController.php(11): View->render('home/index.php', Array)
+#3 C:\xampp\htdocs\my.com\core\Router.php(60): HomeController->index(Array)
+#4 C:\xampp\htdocs\my.com\core\Router.php(25): Router->init('C:\\xampp\\htdocs...', Object(HomeController), 'index')
+#5 C:\xampp\htdocs\my.com\bootstrap\app.php(44): Router->run('', 'GET')
+#6 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\my.com\app\Views\layouts\partials\_flash-message.php on line 5
+[31-Oct-2020 19:57:34 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to a member function render() on null in C:\xampp\htdocs\my.com\app\Controllers\LoginController.php:44
+Stack trace:
+#0 C:\xampp\htdocs\my.com\core\Router.php(60): LoginController->signInForm(Array)
+#1 C:\xampp\htdocs\my.com\core\Router.php(25): Router->init('C:\\xampp\\htdocs...', Object(LoginController), 'signInForm')
+#2 C:\xampp\htdocs\my.com\bootstrap\app.php(44): Router->run('login', 'GET')
+#3 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\my.com\app\Controllers\LoginController.php on line 44
+[31-Oct-2020 19:57:40 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'Helper' not found in C:\xampp\htdocs\my.com\app\Views\layouts\partials\_flash-message.php:5
+Stack trace:
+#0 C:\xampp\htdocs\my.com\app\Views\layouts\app.php(13): require_once()
+#1 C:\xampp\htdocs\my.com\core\View.php(9): include_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\my.com\app\Controllers\HomeController.php(11): View->render('home/index.php', Array)
+#3 C:\xampp\htdocs\my.com\core\Router.php(60): HomeController->index(Array)
+#4 C:\xampp\htdocs\my.com\core\Router.php(25): Router->init('C:\\xampp\\htdocs...', Object(HomeController), 'index')
+#5 C:\xampp\htdocs\my.com\bootstrap\app.php(44): Router->run('', 'GET')
+#6 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\my.com\app\Views\layouts\partials\_flash-message.php on line 5
+[31-Oct-2020 20:10:32 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to a member function render() on null in C:\xampp\htdocs\my.com\app\Controllers\LoginController.php:44
+Stack trace:
+#0 C:\xampp\htdocs\my.com\core\Router.php(60): LoginController->signInForm(Array)
+#1 C:\xampp\htdocs\my.com\core\Router.php(25): Router->init('C:\\xampp\\htdocs...', Object(LoginController), 'signInForm')
+#2 C:\xampp\htdocs\my.com\bootstrap\app.php(44): Router->run('login', 'GET')
+#3 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\my.com\app\Controllers\LoginController.php on line 44
+[31-Oct-2020 20:10:37 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'Helper' not found in C:\xampp\htdocs\my.com\app\Views\layouts\partials\_flash-message.php:5
+Stack trace:
+#0 C:\xampp\htdocs\my.com\app\Views\layouts\app.php(13): require_once()
+#1 C:\xampp\htdocs\my.com\core\View.php(9): include_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\my.com\app\Controllers\HomeController.php(11): View->render('home/index.php', Array)
+#3 C:\xampp\htdocs\my.com\core\Router.php(60): HomeController->index(Array)
+#4 C:\xampp\htdocs\my.com\core\Router.php(25): Router->init('C:\\xampp\\htdocs...', Object(HomeController), 'index')
+#5 C:\xampp\htdocs\my.com\bootstrap\app.php(44): Router->run('', 'GET')
+#6 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\my.com\app\Views\layouts\partials\_flash-message.php on line 5
+[31-Oct-2020 20:12:14 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'Helper' not found in C:\xampp\htdocs\my.com\app\Views\layouts\partials\_flash-message.php:5
+Stack trace:
+#0 C:\xampp\htdocs\my.com\app\Views\layouts\app.php(13): require_once()
+#1 C:\xampp\htdocs\my.com\core\View.php(9): include_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\my.com\app\Controllers\HomeController.php(11): View->render('home/index.php', Array)
+#3 C:\xampp\htdocs\my.com\core\Router.php(60): HomeController->index(Array)
+#4 C:\xampp\htdocs\my.com\core\Router.php(25): Router->init('C:\\xampp\\htdocs...', Object(HomeController), 'index')
+#5 C:\xampp\htdocs\my.com\bootstrap\app.php(44): Router->run('', 'GET')
+#6 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\my.com\app\Views\layouts\partials\_flash-message.php on line 5
+[31-Oct-2020 20:13:28 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'Helper' not found in C:\xampp\htdocs\my.com\app\Views\layouts\partials\_flash-message.php:4
+Stack trace:
+#0 C:\xampp\htdocs\my.com\app\Views\layouts\app.php(13): require_once()
+#1 C:\xampp\htdocs\my.com\core\View.php(9): include_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\my.com\app\Controllers\HomeController.php(11): View->render('home/index.php', Array)
+#3 C:\xampp\htdocs\my.com\core\Router.php(60): HomeController->index(Array)
+#4 C:\xampp\htdocs\my.com\core\Router.php(25): Router->init('C:\\xampp\\htdocs...', Object(HomeController), 'index')
+#5 C:\xampp\htdocs\my.com\bootstrap\app.php(44): Router->run('', 'GET')
+#6 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\my.com\app\Views\layouts\partials\_flash-message.php on line 4
+[31-Oct-2020 20:15:01 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'Helper' not found in C:\xampp\htdocs\my.com\app\Views\layouts\partials\_flash-message.php:4
+Stack trace:
+#0 C:\xampp\htdocs\my.com\app\Views\layouts\app.php(13): require_once()
+#1 C:\xampp\htdocs\my.com\core\View.php(9): include_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\my.com\app\Controllers\SignupController.php(23): View->render('signup/index.ph...', Array, 'app')
+#3 C:\xampp\htdocs\my.com\core\Router.php(60): SignupController->signUpForm(Array)
+#4 C:\xampp\htdocs\my.com\core\Router.php(25): Router->init('C:\\xampp\\htdocs...', Object(SignupController), 'signUpForm')
+#5 C:\xampp\htdocs\my.com\bootstrap\app.php(44): Router->run('signUp', 'GET')
+#6 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\my.com\app\Views\layouts\partials\_flash-message.php on line 4
+[31-Oct-2020 20:17:31 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'Helper' not found in C:\xampp\htdocs\my.com\app\Views\layouts\partials\_flash-message.php:4
+Stack trace:
+#0 C:\xampp\htdocs\my.com\app\Views\layouts\app.php(13): require_once()
+#1 C:\xampp\htdocs\my.com\core\View.php(9): include_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\my.com\app\Controllers\SignupController.php(23): View->render('signup/index.ph...', Array, 'app')
+#3 C:\xampp\htdocs\my.com\core\Router.php(60): SignupController->signUpForm(Array)
+#4 C:\xampp\htdocs\my.com\core\Router.php(25): Router->init('C:\\xampp\\htdocs...', Object(SignupController), 'signUpForm')
+#5 C:\xampp\htdocs\my.com\bootstrap\app.php(44): Router->run('signUp', 'GET')
+#6 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\my.com\app\Views\layouts\partials\_flash-message.php on line 4
+[31-Oct-2020 20:19:05 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to a member function render() on null in C:\xampp\htdocs\my.com\app\Controllers\LoginController.php:44
+Stack trace:
+#0 C:\xampp\htdocs\my.com\core\Router.php(60): LoginController->signInForm(Array)
+#1 C:\xampp\htdocs\my.com\core\Router.php(25): Router->init('C:\\xampp\\htdocs...', Object(LoginController), 'signInForm')
+#2 C:\xampp\htdocs\my.com\bootstrap\app.php(44): Router->run('login', 'GET')
+#3 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\my.com\app\Controllers\LoginController.php on line 44
+[31-Oct-2020 20:19:43 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'Helper' not found in C:\xampp\htdocs\my.com\app\Views\layouts\partials\_flash-message.php:4
+Stack trace:
+#0 C:\xampp\htdocs\my.com\app\Views\layouts\app.php(13): require_once()
+#1 C:\xampp\htdocs\my.com\core\View.php(9): include_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\my.com\app\Controllers\ErrorController.php(7): View->render('errors/index.ph...', Array)
+#3 C:\xampp\htdocs\my.com\core\Router.php(39): ErrorController->notFound()
+#4 C:\xampp\htdocs\my.com\bootstrap\app.php(44): Router->run('login', 'GET')
+#5 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\my.com\app\Views\layouts\partials\_flash-message.php on line 4
+[31-Oct-2020 20:20:21 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'Helper' not found in C:\xampp\htdocs\my.com\app\Views\layouts\partials\_flash-message.php:4
+Stack trace:
+#0 C:\xampp\htdocs\my.com\app\Views\layouts\app.php(13): require_once()
+#1 C:\xampp\htdocs\my.com\core\View.php(9): include_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\my.com\app\Controllers\HomeController.php(11): View->render('home/index.php', Array)
+#3 C:\xampp\htdocs\my.com\core\Router.php(60): HomeController->index(Array)
+#4 C:\xampp\htdocs\my.com\core\Router.php(25): Router->init('C:\\xampp\\htdocs...', Object(HomeController), 'index')
+#5 C:\xampp\htdocs\my.com\bootstrap\app.php(44): Router->run('', 'GET')
+#6 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\my.com\app\Views\layouts\partials\_flash-message.php on line 4
+[31-Oct-2020 20:21:27 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'Helper' not found in C:\xampp\htdocs\my.com\app\Views\layouts\partials\_flash-message.php:4
+Stack trace:
+#0 C:\xampp\htdocs\my.com\app\Views\layouts\auth.php(27): require_once()
+#1 C:\xampp\htdocs\my.com\core\View.php(9): include_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\my.com\app\Controllers\SignupController.php(23): View->render('signup/index.ph...', Array, 'auth')
+#3 C:\xampp\htdocs\my.com\core\Router.php(60): SignupController->signUpForm(Array)
+#4 C:\xampp\htdocs\my.com\core\Router.php(25): Router->init('C:\\xampp\\htdocs...', Object(SignupController), 'signUpForm')
+#5 C:\xampp\htdocs\my.com\bootstrap\app.php(44): Router->run('signUp', 'GET')
+#6 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\my.com\app\Views\layouts\partials\_flash-message.php on line 4
+[31-Oct-2020 20:21:48 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to a member function render() on null in C:\xampp\htdocs\my.com\app\Controllers\LoginController.php:44
+Stack trace:
+#0 C:\xampp\htdocs\my.com\core\Router.php(60): LoginController->signInForm(Array)
+#1 C:\xampp\htdocs\my.com\core\Router.php(25): Router->init('C:\\xampp\\htdocs...', Object(LoginController), 'signInForm')
+#2 C:\xampp\htdocs\my.com\bootstrap\app.php(44): Router->run('login', 'GET')
+#3 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\my.com\app\Controllers\LoginController.php on line 44
+[31-Oct-2020 20:22:33 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to a member function render() on null in C:\xampp\htdocs\my.com\app\Controllers\LoginController.php:44
+Stack trace:
+#0 C:\xampp\htdocs\my.com\core\Router.php(60): LoginController->signInForm(Array)
+#1 C:\xampp\htdocs\my.com\core\Router.php(25): Router->init('C:\\xampp\\htdocs...', Object(LoginController), 'signInForm')
+#2 C:\xampp\htdocs\my.com\bootstrap\app.php(44): Router->run('login', 'GET')
+#3 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\my.com\app\Controllers\LoginController.php on line 44
+[31-Oct-2020 20:27:33 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to a member function render() on null in C:\xampp\htdocs\my.com\app\Controllers\LoginController.php:44
+Stack trace:
+#0 C:\xampp\htdocs\my.com\core\Router.php(60): LoginController->signInForm(Array)
+#1 C:\xampp\htdocs\my.com\core\Router.php(25): Router->init('C:\\xampp\\htdocs...', Object(LoginController), 'signInForm')
+#2 C:\xampp\htdocs\my.com\bootstrap\app.php(45): Router->run('login', 'GET')
+#3 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\my.com\app\Controllers\LoginController.php on line 44
+[31-Oct-2020 20:27:53 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to a member function render() on null in C:\xampp\htdocs\my.com\app\Controllers\LoginController.php:44
+Stack trace:
+#0 C:\xampp\htdocs\my.com\core\Router.php(60): LoginController->signInForm(Array)
+#1 C:\xampp\htdocs\my.com\core\Router.php(25): Router->init('C:\\xampp\\htdocs...', Object(LoginController), 'signInForm')
+#2 C:\xampp\htdocs\my.com\bootstrap\app.php(45): Router->run('login', 'GET')
+#3 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\my.com\app\Controllers\LoginController.php on line 44
+[31-Oct-2020 20:29:09 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to a member function render() on null in C:\xampp\htdocs\my.com\app\Controllers\LoginController.php:44
+Stack trace:
+#0 C:\xampp\htdocs\my.com\core\Router.php(60): LoginController->signInForm(Array)
+#1 C:\xampp\htdocs\my.com\core\Router.php(25): Router->init('C:\\xampp\\htdocs...', Object(LoginController), 'signInForm')
+#2 C:\xampp\htdocs\my.com\bootstrap\app.php(45): Router->run('login', 'GET')
+#3 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\my.com\app\Controllers\LoginController.php on line 44
+[31-Oct-2020 20:30:51 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'LoginController' not found in C:\xampp\htdocs\my.com\core\Router.php:56
+Stack trace:
+#0 C:\xampp\htdocs\my.com\core\Router.php(25): Router->init('C:\\xampp\\htdocs...', 'LoginController', 'signInForm')
+#1 C:\xampp\htdocs\my.com\bootstrap\app.php(45): Router->run('login', 'GET')
+#2 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\my.com\core\Router.php on line 56
+[31-Oct-2020 20:31:54 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to undefined method LoginController::signInForm() in C:\xampp\htdocs\my.com\core\Router.php:60
+Stack trace:
+#0 C:\xampp\htdocs\my.com\core\Router.php(25): Router->init('C:\\xampp\\htdocs...', Object(LoginController), 'signInForm')
+#1 C:\xampp\htdocs\my.com\bootstrap\app.php(45): Router->run('login', 'GET')
+#2 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\my.com\core\Router.php on line 60
+[31-Oct-2020 20:32:23 Europe/Kiev] PHP Notice:  Undefined variable: title in C:\xampp\htdocs\my.com\app\Views\layouts\app.php on line 6
+[31-Oct-2020 20:36:37 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to undefined method LoginController::signInForm() in C:\xampp\htdocs\my.com\core\Router.php:60
+Stack trace:
+#0 C:\xampp\htdocs\my.com\core\Router.php(25): Router->init('C:\\xampp\\htdocs...', Object(LoginController), 'signInForm')
+#1 C:\xampp\htdocs\my.com\bootstrap\app.php(45): Router->run('login', 'GET')
+#2 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\my.com\core\Router.php on line 60
+[31-Oct-2020 20:38:13 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to undefined method Model::getOne() in C:\xampp\htdocs\my.com\app\Models\User.php:11
+Stack trace:
+#0 C:\xampp\htdocs\my.com\app\Controllers\LoginController.php(99): User::checkUser('fafohabozexu@te...', '1234567')
+#1 C:\xampp\htdocs\my.com\core\Router.php(60): LoginController->signin(Array)
+#2 C:\xampp\htdocs\my.com\core\Router.php(25): Router->init('C:\\xampp\\htdocs...', Object(LoginController), 'signin')
+#3 C:\xampp\htdocs\my.com\bootstrap\app.php(45): Router->run('login', 'POST')
+#4 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\my.com\app\Models\User.php on line 11
+[31-Oct-2020 20:47:58 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to undefined method Connection::preparedStatment() in C:\xampp\htdocs\my.com\core\Model.php:75
+Stack trace:
+#0 C:\xampp\htdocs\my.com\app\Models\User.php(11): Model::getOne('SELECT * FROM u...')
+#1 C:\xampp\htdocs\my.com\app\Controllers\LoginController.php(99): User::checkUser('fafohabozexu@te...', '1234567')
+#2 C:\xampp\htdocs\my.com\core\Router.php(60): LoginController->signin(Array)
+#3 C:\xampp\htdocs\my.com\core\Router.php(25): Router->init('C:\\xampp\\htdocs...', Object(LoginController), 'signin')
+#4 C:\xampp\htdocs\my.com\bootstrap\app.php(45): Router->run('login', 'POST')
+#5 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\my.com\core\Model.php on line 75
+[31-Oct-2020 21:51:10 Europe/Kiev] PHP Warning:  include_once(C:\xampp\htdocs\my.com/app/Controllers\AuthController.php): failed to open stream: No such file or directory in C:\xampp\htdocs\my.com\core\Router.php on line 55
+[31-Oct-2020 21:51:10 Europe/Kiev] PHP Warning:  include_once(): Failed opening 'C:\xampp\htdocs\my.com/app/Controllers\AuthController.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\my.com\core\Router.php on line 55
+[31-Oct-2020 21:51:10 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'AuthController' not found in C:\xampp\htdocs\my.com\core\Router.php:56
+Stack trace:
+#0 C:\xampp\htdocs\my.com\core\Router.php(25): Router->init('C:\\xampp\\htdocs...', 'AuthController', 'signUp')
+#1 C:\xampp\htdocs\my.com\bootstrap\app.php(45): Router->run('signUp', 'POST')
+#2 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\my.com\core\Router.php on line 56
+[31-Oct-2020 21:54:41 Europe/Kiev] PHP Warning:  include_once(C:\xampp\htdocs\my.com/app/Controllers\AuthController.php): failed to open stream: No such file or directory in C:\xampp\htdocs\my.com\core\Router.php on line 55
+[31-Oct-2020 21:54:41 Europe/Kiev] PHP Warning:  include_once(): Failed opening 'C:\xampp\htdocs\my.com/app/Controllers\AuthController.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\my.com\core\Router.php on line 55
+[31-Oct-2020 21:54:41 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'AuthController' not found in C:\xampp\htdocs\my.com\core\Router.php:56
+Stack trace:
+#0 C:\xampp\htdocs\my.com\core\Router.php(25): Router->init('C:\\xampp\\htdocs...', 'AuthController', 'signUp')
+#1 C:\xampp\htdocs\my.com\bootstrap\app.php(45): Router->run('signUp', 'POST')
+#2 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\my.com\core\Router.php on line 56
+[31-Oct-2020 22:41:52 Europe/Kiev] PHP Notice:  Undefined variable: hash in C:\xampp\htdocs\my.com\app\Controllers\Admin\UserController.php on line 65
+[31-Oct-2020 22:43:21 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'LoginController' not found in C:\xampp\htdocs\my.com\core\Router.php:56
+Stack trace:
+#0 C:\xampp\htdocs\my.com\core\Router.php(25): Router->init('C:\\xampp\\htdocs...', 'LoginController', 'signInForm')
+#1 C:\xampp\htdocs\my.com\bootstrap\app.php(45): Router->run('login', 'GET')
+#2 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\my.com\core\Router.php on line 56
+[31-Oct-2020 22:44:28 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'LoginController' not found in C:\xampp\htdocs\my.com\core\Router.php:56
+Stack trace:
+#0 C:\xampp\htdocs\my.com\core\Router.php(25): Router->init('C:\\xampp\\htdocs...', 'LoginController', 'signInForm')
+#1 C:\xampp\htdocs\my.com\bootstrap\app.php(45): Router->run('login', 'GET')
+#2 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\my.com\core\Router.php on line 56
+[31-Oct-2020 22:44:46 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'LoginController' not found in C:\xampp\htdocs\my.com\core\Router.php:56
+Stack trace:
+#0 C:\xampp\htdocs\my.com\core\Router.php(25): Router->init('C:\\xampp\\htdocs...', 'LoginController', 'signInForm')
+#1 C:\xampp\htdocs\my.com\bootstrap\app.php(45): Router->run('login', 'GET')
+#2 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\my.com\core\Router.php on line 56
+[31-Oct-2020 22:45:50 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to undefined method LoginController::signInForm() in C:\xampp\htdocs\my.com\core\Router.php:60
+Stack trace:
+#0 C:\xampp\htdocs\my.com\core\Router.php(25): Router->init('C:\\xampp\\htdocs...', Object(LoginController), 'signInForm')
+#1 C:\xampp\htdocs\my.com\bootstrap\app.php(45): Router->run('login', 'GET')
+#2 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\my.com\core\Router.php on line 60
+[31-Oct-2020 23:00:32 Europe/Kiev] PHP Deprecated:  Non-static method Model::getById() should not be called statically in C:\xampp\htdocs\my.com\app\Controllers\LoginController.php on line 64
+[31-Oct-2020 23:00:33 Europe/Kiev] PHP Deprecated:  Non-static method Model::getById() should not be called statically in C:\xampp\htdocs\my.com\app\Controllers\ProfileController.php on line 20
+[31-Oct-2020 23:00:33 Europe/Kiev] PHP Notice:  Undefined property: stdClass::$name in C:\xampp\htdocs\my.com\app\Views\profile\_profile.php on line 11
+[31-Oct-2020 23:03:14 Europe/Kiev] PHP Deprecated:  Non-static method Model::getById() should not be called statically in C:\xampp\htdocs\my.com\app\Controllers\ProfileController.php on line 21
+[31-Oct-2020 23:04:31 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to undefined method User::getByPrimaryKey() in C:\xampp\htdocs\my.com\app\Controllers\ProfileController.php:21
+Stack trace:
+#0 C:\xampp\htdocs\my.com\core\Router.php(56): ProfileController->__construct()
+#1 C:\xampp\htdocs\my.com\core\Router.php(25): Router->init('C:\\xampp\\htdocs...', 'ProfileControll...', 'index')
+#2 C:\xampp\htdocs\my.com\bootstrap\app.php(45): Router->run('profile', 'GET')
+#3 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\my.com\app\Controllers\ProfileController.php on line 21
+[31-Oct-2020 23:04:53 Europe/Kiev] PHP Deprecated:  Non-static method Model::getById() should not be called statically in C:\xampp\htdocs\my.com\app\Controllers\ProfileController.php on line 21
+[31-Oct-2020 23:05:10 Europe/Kiev] PHP Deprecated:  Non-static method Model::getById() should not be called statically in C:\xampp\htdocs\my.com\app\Controllers\ProfileController.php on line 21
+[31-Oct-2020 23:09:37 Europe/Kiev] PHP Notice:  Undefined property: stdClass::$name in C:\xampp\htdocs\my.com\app\Views\profile\_profile.php on line 12
+[01-Nov-2020 11:31:09 Europe/Kiev] PHP Notice:  Undefined variable: Id in C:\xampp\htdocs\my.com\app\Controllers\LoginController.php on line 30
+[01-Nov-2020 11:31:09 Europe/Kiev] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+[01-Nov-2020 11:31:09 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to a member function signInForm() on string in C:\xampp\htdocs\my.com\core\Router.php:60
+Stack trace:
+#0 C:\xampp\htdocs\my.com\core\Router.php(25): Router->init('C:\\xampp\\htdocs...', 'LoginController', 'signInForm')
+#1 C:\xampp\htdocs\my.com\bootstrap\app.php(45): Router->run('login', 'GET')
+#2 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\my.com\core\Router.php on line 60
+[01-Nov-2020 11:52:25 Europe/Kiev] PHP Warning:  require_once(C:\xampp\htdocs\my.com/app/Models/Order.php): failed to open stream: No such file or directory in C:\xampp\htdocs\my.com\app\Controllers\ProfileController.php on line 4
+[01-Nov-2020 11:52:25 Europe/Kiev] PHP Fatal error:  require_once(): Failed opening required 'C:\xampp\htdocs\my.com/app/Models/Order.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\my.com\app\Controllers\ProfileController.php on line 4
+[01-Nov-2020 11:55:01 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to undefined method User::getByPrimaryKey() in C:\xampp\htdocs\my.com\core\Auth.php:29
+Stack trace:
+#0 C:\xampp\htdocs\my.com\app\Controllers\ProfileController.php(20): Auth->__construct()
+#1 C:\xampp\htdocs\my.com\core\Router.php(56): ProfileController->__construct()
+#2 C:\xampp\htdocs\my.com\core\Router.php(25): Router->init('C:\\xampp\\htdocs...', 'ProfileControll...', 'index')
+#3 C:\xampp\htdocs\my.com\bootstrap\app.php(45): Router->run('profile', 'GET')
+#4 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\my.com\core\Auth.php on line 29
+[01-Nov-2020 11:55:37 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to undefined method User::getByPk() in C:\xampp\htdocs\my.com\core\Auth.php:29
+Stack trace:
+#0 C:\xampp\htdocs\my.com\app\Controllers\ProfileController.php(20): Auth->__construct()
+#1 C:\xampp\htdocs\my.com\core\Router.php(56): ProfileController->__construct()
+#2 C:\xampp\htdocs\my.com\core\Router.php(25): Router->init('C:\\xampp\\htdocs...', 'ProfileControll...', 'index')
+#3 C:\xampp\htdocs\my.com\bootstrap\app.php(45): Router->run('profile', 'GET')
+#4 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\my.com\core\Auth.php on line 29
+[01-Nov-2020 11:55:53 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to undefined method User::getByPK() in C:\xampp\htdocs\my.com\core\Auth.php:29
+Stack trace:
+#0 C:\xampp\htdocs\my.com\app\Controllers\ProfileController.php(20): Auth->__construct()
+#1 C:\xampp\htdocs\my.com\core\Router.php(56): ProfileController->__construct()
+#2 C:\xampp\htdocs\my.com\core\Router.php(25): Router->init('C:\\xampp\\htdocs...', 'ProfileControll...', 'index')
+#3 C:\xampp\htdocs\my.com\bootstrap\app.php(45): Router->run('profile', 'GET')
+#4 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\my.com\core\Auth.php on line 29
+[01-Nov-2020 11:56:26 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to undefined method User::getByPrimaryKey() in C:\xampp\htdocs\my.com\core\Auth.php:29
+Stack trace:
+#0 C:\xampp\htdocs\my.com\app\Controllers\ProfileController.php(20): Auth->__construct()
+#1 C:\xampp\htdocs\my.com\core\Router.php(56): ProfileController->__construct()
+#2 C:\xampp\htdocs\my.com\core\Router.php(25): Router->init('C:\\xampp\\htdocs...', 'ProfileControll...', 'index')
+#3 C:\xampp\htdocs\my.com\bootstrap\app.php(45): Router->run('profile', 'GET')
+#4 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\my.com\core\Auth.php on line 29
+[01-Nov-2020 11:57:05 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to undefined method User::getByPrimaryKey() in C:\xampp\htdocs\my.com\core\Auth.php:29
+Stack trace:
+#0 C:\xampp\htdocs\my.com\app\Controllers\ProfileController.php(20): Auth->__construct()
+#1 C:\xampp\htdocs\my.com\core\Router.php(56): ProfileController->__construct()
+#2 C:\xampp\htdocs\my.com\core\Router.php(25): Router->init('C:\\xampp\\htdocs...', 'ProfileControll...', 'index')
+#3 C:\xampp\htdocs\my.com\bootstrap\app.php(45): Router->run('profile', 'GET')
+#4 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\my.com\core\Auth.php on line 29
+[01-Nov-2020 11:59:28 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to undefined method User::getByPK() in C:\xampp\htdocs\my.com\core\Auth.php:29
+Stack trace:
+#0 C:\xampp\htdocs\my.com\app\Controllers\ProfileController.php(20): Auth->__construct()
+#1 C:\xampp\htdocs\my.com\core\Router.php(56): ProfileController->__construct()
+#2 C:\xampp\htdocs\my.com\core\Router.php(25): Router->init('C:\\xampp\\htdocs...', 'ProfileControll...', 'index')
+#3 C:\xampp\htdocs\my.com\bootstrap\app.php(45): Router->run('profile', 'GET')
+#4 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\my.com\core\Auth.php on line 29
+[01-Nov-2020 12:34:36 Europe/Kiev] PHP Parse error:  syntax error, unexpected ''orders'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in C:\xampp\htdocs\my.com\app\Controllers\ProfileController.php on line 58
+[01-Nov-2020 12:35:48 Europe/Kiev] PHP Notice:  Undefined property: stdClass::$role in C:\xampp\htdocs\my.com\app\Views\profile\_profile.php on line 16
+[01-Nov-2020 12:37:03 Europe/Kiev] PHP Notice:  Undefined property: stdClass::$role_name in C:\xampp\htdocs\my.com\app\Views\profile\_profile.php on line 16
+[01-Nov-2020 12:37:23 Europe/Kiev] PHP Notice:  Trying to get property 'name' of non-object in C:\xampp\htdocs\my.com\app\Views\profile\_profile.php on line 16
+[01-Nov-2020 12:39:55 Europe/Kiev] PHP Notice:  Undefined variable: role_id in C:\xampp\htdocs\my.com\app\Views\profile\_profile.php on line 16
+[01-Nov-2020 12:39:55 Europe/Kiev] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\my.com\app\Views\profile\_profile.php on line 16
+[01-Nov-2020 12:40:28 Europe/Kiev] PHP Notice:  Undefined variable: role_id in C:\xampp\htdocs\my.com\app\Views\profile\_profile.php on line 16
+[01-Nov-2020 12:40:28 Europe/Kiev] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\my.com\app\Views\profile\_profile.php on line 16
+[01-Nov-2020 12:41:22 Europe/Kiev] PHP Notice:  Undefined variable: role_id in C:\xampp\htdocs\my.com\app\Views\profile\_profile.php on line 18
+[01-Nov-2020 12:41:22 Europe/Kiev] PHP Notice:  Trying to get property 'role_name' of non-object in C:\xampp\htdocs\my.com\app\Views\profile\_profile.php on line 18

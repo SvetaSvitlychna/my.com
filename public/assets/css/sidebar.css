@@ -73,9 +73,9 @@
 .mr-auto, .mx-auto {
     margin-right: auto !important;
 }
-.d-flex {
+/* .d-flex {
     display: flex;
-}
+} */
 .border {
   border: 1px solid #dee2e6 !important;
 }
