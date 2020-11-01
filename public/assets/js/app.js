@@ -407,7 +407,7 @@ const app =new App();
     `${navbarNav('', '/', 'fa-home', 'Home')}
     ${navbarNav('','/about','fa-book-open', 'About' )}
     ${navbarNav('','/catalog', 'fa-blog','Catalog')}
-    ${navbarNav('','/signup', 'fa-address-card','Sign Up')}`;
+    ${navbarNav('','/registr', 'fa-address-card','Sign Up')}`;
 
 
     document.querySelector('.footer-service').innerHTML =

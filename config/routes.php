@@ -61,11 +61,11 @@ $router->get('api/categories','HomeController@getCategories');
 //  $router->get('api/product/{id}', 'HomeController@getProductItem');
 
 
-$router->get('signUp', 'SignupController@signUpForm');
+$router->get('signup', 'SignupController@signUpForm');
 $router->get('login', 'LoginController@signInForm');
 $router->post('login', 'LoginController@signin');
 $router->get('profile', 'ProfileController@index');
-$router->post('signup', 'SignupController@signup');
+$router->post('registr', 'SignupController@signup');
 
 $router->get('logout', 'LoginController@logout');
 

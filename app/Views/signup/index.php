@@ -1,6 +1,6 @@
 <div class="overlay-form">
         <div class="container-form sign-up-container"> 
-            <form method="POST" action="/signup">
+            <form method="POST" action="/registr">
                     <h2 >Fill in a form for registration</h2>
                     <div class="social-container">
                         <a href="#" class="social"><i class="fab fa-facebook"></i></a>

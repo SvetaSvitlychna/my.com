@@ -29,6 +29,7 @@ class SignupController extends Controller{
    }
 
 
+
       public function signup()
     {
         $request = new Request();
