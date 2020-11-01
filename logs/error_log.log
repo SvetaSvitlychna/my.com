@@ -5636,3 +5636,39 @@ Stack trace:
 [01-Nov-2020 12:40:28 Europe/Kiev] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\my.com\app\Views\profile\_profile.php on line 16
 [01-Nov-2020 12:41:22 Europe/Kiev] PHP Notice:  Undefined variable: role_id in C:\xampp\htdocs\my.com\app\Views\profile\_profile.php on line 18
 [01-Nov-2020 12:41:22 Europe/Kiev] PHP Notice:  Trying to get property 'role_name' of non-object in C:\xampp\htdocs\my.com\app\Views\profile\_profile.php on line 18
+[01-Nov-2020 18:46:50 Europe/Kiev] PHP Fatal error:  Uncaught Error: Using $this when not in object context in C:\xampp\htdocs\my.com\app\Controllers\SignupController.php:55
+Stack trace:
+#0 C:\xampp\htdocs\my.com\app\Controllers\SignupController.php(32): SignupController::is_valid_passwords('1234567', NULL)
+#1 C:\xampp\htdocs\my.com\core\Router.php(60): SignupController->signup(Array)
+#2 C:\xampp\htdocs\my.com\core\Router.php(25): Router->init('C:\\xampp\\htdocs...', Object(SignupController), 'signup')
+#3 C:\xampp\htdocs\my.com\bootstrap\app.php(45): Router->run('signup', 'POST')
+#4 C:\xampp\htdocs\my.com\public\index.php(5): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\my.com\app\Controllers\SignupController.php on line 55
+[01-Nov-2020 18:47:47 Europe/Kiev] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ';' in C:\xampp\htdocs\my.com\app\Controllers\SignupController.php on line 55
+[01-Nov-2020 18:48:02 Europe/Kiev] PHP Notice:  Undefined offset: 2 in C:\xampp\htdocs\my.com\app\Controllers\SignupController.php on line 33
+[01-Nov-2020 19:44:44 Europe/Kiev] PHP Warning:  Use of undefined constant EXT - assumed 'EXT' (this will throw an Error in a future version of PHP) in C:\xampp\htdocs\my.com\bootstrap\app.php on line 49
+[01-Nov-2020 19:44:44 Europe/Kiev] PHP Warning:  Use of undefined constant EXT - assumed 'EXT' (this will throw an Error in a future version of PHP) in C:\xampp\htdocs\my.com\bootstrap\app.php on line 54
+[01-Nov-2020 19:44:44 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'App' not found in C:\xampp\htdocs\my.com\bootstrap\app.php:62
+Stack trace:
+#0 C:\xampp\htdocs\my.com\public\index.php(5): require_once()
+#1 {main}
+  thrown in C:\xampp\htdocs\my.com\bootstrap\app.php on line 62
+[01-Nov-2020 19:45:55 Europe/Kiev] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in C:\xampp\htdocs\my.com\bootstrap\app.php on line 49
+[01-Nov-2020 19:45:55 Europe/Kiev] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in C:\xampp\htdocs\my.com\bootstrap\app.php on line 54
+[01-Nov-2020 19:45:55 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'App' not found in C:\xampp\htdocs\my.com\bootstrap\app.php:62
+Stack trace:
+#0 C:\xampp\htdocs\my.com\public\index.php(5): require_once()
+#1 {main}
+  thrown in C:\xampp\htdocs\my.com\bootstrap\app.php on line 62
+[01-Nov-2020 19:46:11 Europe/Kiev] PHP Warning:  Use of undefined constant PHP - assumed 'PHP' (this will throw an Error in a future version of PHP) in C:\xampp\htdocs\my.com\bootstrap\app.php on line 49
+[01-Nov-2020 19:46:11 Europe/Kiev] PHP Warning:  Use of undefined constant PHP - assumed 'PHP' (this will throw an Error in a future version of PHP) in C:\xampp\htdocs\my.com\bootstrap\app.php on line 54
+[01-Nov-2020 19:46:11 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'App' not found in C:\xampp\htdocs\my.com\bootstrap\app.php:62
+Stack trace:
+#0 C:\xampp\htdocs\my.com\public\index.php(5): require_once()
+#1 {main}
+  thrown in C:\xampp\htdocs\my.com\bootstrap\app.php on line 62
+[01-Nov-2020 20:04:16 Europe/Kiev] PHP Notice:  Undefined property: stdClass::$image in C:\xampp\htdocs\my.com\app\Views\admin\categories\edit.php on line 34
+[01-Nov-2020 20:07:52 Europe/Kiev] PHP Notice:  Undefined property: stdClass::$image in C:\xampp\htdocs\my.com\app\Views\admin\categories\edit.php on line 34
+[01-Nov-2020 20:09:29 Europe/Kiev] PHP Notice:  Undefined property: stdClass::$image in C:\xampp\htdocs\my.com\app\Views\admin\categories\edit.php on line 34
+[01-Nov-2020 20:10:30 Europe/Kiev] PHP Notice:  Undefined property: stdClass::$image in C:\xampp\htdocs\my.com\app\Views\admin\categories\edit.php on line 34

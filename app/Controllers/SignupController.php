@@ -23,6 +23,12 @@ class SignupController extends Controller{
       $this->view->render('signup/index', ['title'=> 'Sign Up'], 'app');
    }
 
+   public function __construct()
+   {
+       parent::__construct();
+   }
+
+
       public function signup()
     {
         $request = new Request();
@@ -30,7 +36,7 @@ class SignupController extends Controller{
         $confirmpassword = $request->confirmpassword;
         
         if (self::is_valid_passwords($password, $confirmpassword)){
-            list($first_name, $last_name, $domain) = explode('@', $request->email);
+            list($first_name, $last_name,$phone_number, $domain) = explode('@', $request->email);
             $hash = password_hash($password, PASSWORD_BCRYPT, $this->costs);
             (new User())::save([    
                "first_name"=>$request->first_name,  
@@ -39,7 +45,7 @@ class SignupController extends Controller{
                "password"=>$hash,
                "email"=>$request->email,
                "phone_number"=>$request->phone_number]);
-            header('Location: /sigin');
+            header('Location: /profile');
         } else {
             $this->error = "Your passwords do not match. Please type carefully.";
             Session::set('error', $this->error);

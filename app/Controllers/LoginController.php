@@ -75,8 +75,8 @@ class LoginController extends Controller
             }
             header('Location: /profile'); 
         }
-	}
-    
+    }
+   
     function logout()
 	{
 	

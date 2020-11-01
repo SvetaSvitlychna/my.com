@@ -20,7 +20,8 @@ class Order extends Model
 
     public static function getAll()
     {
-        $sql = "SELECT orders.id order_id, orders.user_id, orders.status, orders.order_date, users.name
+        $sql = "SELECT orders.id order_id, orders.user_id, 
+        orders.status, orders.order_date, users.name
             FROM orders INNER JOIN users
             ON orders.user_id = users.id
             ORDER BY orders.order_date DESC";

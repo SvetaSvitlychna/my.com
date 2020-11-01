@@ -1,6 +1,6 @@
 
 
-<div class="profile-sidebar position-fixed">
+<div class="col-3 profile-sidebar position-fixed">
     <div class="overlay-form ">
         <div class="row-profile">     
             <div class="col-mb-4 mb-4 float-left">

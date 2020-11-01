@@ -10,7 +10,8 @@ class ProductController extends Controller{
    public function index (){
        $title ='Products Managment';
        $products = Product::all();
-       $this->view-> render('admin/products/index', compact ('title', 'products'), 'admin');
+       $this->view-> render('admin/products/index', 
+       compact ('title', 'products'), 'admin');
    }  
    public function create (){
         $title ='Add New Product';

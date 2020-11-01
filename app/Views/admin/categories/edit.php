@@ -21,7 +21,25 @@
                 <input type="checkbox" class="form-control" id="status" 
                 name="status"<?=($category->status===1)?'checked':''?>>
             </div>
-            
+            <div class="form-group row">
+                    <div class="container">
+                        <div class="card border-success text-center mb-3">
+                            <div class="card-header bg-transparent border-success"></div>
+                                <lable for="title">Add image for category</lable>
+                            </div>
+                            <div class="card-body text-success">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <input type="file" acccept="image/*" 
+                                        name="image"  value="<?=$category->image?>">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <p>Drop Picture here</p>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+            </div>
             <div class="mx-auto">
                 <button type="submit" class="btn btn-primary">Update</button>
             </div>

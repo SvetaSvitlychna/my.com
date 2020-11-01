@@ -43,3 +43,5 @@ require_once CORE.'/Router.php';
 require_once CORE.'/Helper.php';
 $router = Router::load(ROUTES);
 $router->run(Request::uri(), Request::method());
+
+

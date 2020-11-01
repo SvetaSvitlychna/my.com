@@ -183,15 +183,13 @@ newproduct.forEach(item=> {result+=this.createProductMarkUp(item);
 document.querySelector('.showcase').innerHTML = result;
 }
 
-// makeShowCase(product){
-//     if (!document.querySelector('.showcase')){
-//         return;
-//     }
-//     let result = '';
-// product.forEach(item=> {result+=this.createProductMarkUp(item);
+// makeShowCase(products){
+//   let result = '';
+//  products.forEach(item=>{
+//     result+= this.createProductMarkUp(item);
 // });
-// document.querySelector('.showcase').innerHTML = result;
-// }
+//   document.querySelector('.showcase').innerHTML = result;
+//  }
 createProductMarkUp(data){
     return`
     <div  class="col-md-3 col-xl-3 col-lg-4 col-sm-6 cartItem">
@@ -354,17 +352,19 @@ fetchData(resource, model){
 }
 createCategory(category){
     return`
+   
     <a class="category-item mb-4" data-category ="${category.name}" 
     href="#"><img class="img-fluid" src="${category.image}" 
     alt="${category.name}"><strong class="category-item 
     category-item-title" data-category="${category.name}">${category.name}</strong></a>
+    
      `;
 }
 makeCategories(categories){
     let limit = (categories.length>3)? 3:categories.length;
     for (let i=0; i<limit; i++){
         let div = document.createElement('div');
-        div.classList.add('col-md-4');
+        div.classList.add('col1-md-3');
         div.innerHTML = this.createCategory(categories[i]);
         document.querySelector('.categories').append(div);
     }
@@ -402,12 +402,12 @@ const app =new App();
         app.makeCategories(Storage.getStorageItem('categories'));
     }
    
-
+    
     document.querySelector('.navbar-nav').innerHTML =
     `${navbarNav('', '/', 'fa-home', 'Home')}
     ${navbarNav('','/about','fa-book-open', 'About' )}
     ${navbarNav('','/catalog', 'fa-blog','Catalog')}
-    ${navbarNav('','/signUp', 'fa-address-card','Sign Up')}`;
+    ${navbarNav('','/signup', 'fa-address-card','Sign Up')}`;
 
 
     document.querySelector('.footer-service').innerHTML =
@@ -424,8 +424,8 @@ const app =new App();
     ${footerContact('viber','','fab fa-viber', '+38 000 111 11 11')}
     ${footerContact('telegram','','fab fa-telegram', '+38 000 111 11 11')}`;
 
-    app.fetchData("products", new Product());
-    app.makeShowcase(Storage.getStorageItem("products"));
+    app.fetchData("newproduct", new Product());
+    app.makeShowcase(Storage.getStorageItem("product"));
     app.addToCarts();
     app.renderCart();
     app.renderCategory(); 

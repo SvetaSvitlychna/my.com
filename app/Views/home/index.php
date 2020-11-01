@@ -102,7 +102,7 @@
         </header>
         <div class="showcase rowprod">
             <div class="btn-btn">
-                <a href="catalog.html">See more</a>
+                <a href="/catalog">See more</a>
             </div>
         </div>
     </section>
