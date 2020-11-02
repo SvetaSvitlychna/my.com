@@ -64,9 +64,13 @@ class ProductController extends Controller{
    }   
    public function show($vars){
       extract ($vars);
+      $title ='Show Product';
       $product = (new Product())->getById($id);
-      var_dump($product);
-     
+      $categories = Category::all();
+      $brands = Brand::all();
+      // var_dump($product);
+      $this->view-> render('admin/products/show', 
+      compact ('title', 'product', 'categories', 'brands'), 'admin');
    }
    public function edit($vars){
       extract ($vars);

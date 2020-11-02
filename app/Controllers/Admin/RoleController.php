@@ -25,7 +25,11 @@ class RoleController extends Controller{
    public function show($vars){
       extract ($vars);
       $role = (new Role())->getById($id);
-      var_dump($role);
+
+      $title ='Show Role';
+      $this->view-> render('admin/roles/show', 
+      compact ('title', 'role'), 'admin');
+      // var_dump($role);
      
    }
    public function edit($vars){

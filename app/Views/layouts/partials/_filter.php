@@ -1,6 +1,7 @@
  <h5 class="text-uppercase mb-4">Categories</h5>
                         
-<div class="py-2 px-4 bg-dark text-white mb-3"><strong class="small text-uppercase font-weight-bold">Bicycle</strong></div>
+<div class="py-2 px-4 bg-dark text-white mb-3">
+    <strong class="small text-uppercase font-weight-bold">Bicycle</strong></div>
 <ul class="list-unstyled small text-muted pl-4 font-weight-normal">
     <?php foreach($categories as $category):?>
     <li class="mb-2">

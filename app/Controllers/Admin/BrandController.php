@@ -27,8 +27,10 @@ class BrandController extends Controller
    }   
     public function show($vars){
         extract ($vars);
+        $title ='Show Brand';
         $brand = (new Brand())->getById($id);
-        var_dump($brand);
+        // var_dump($brand);
+        $this->view->render('admin/brands/show', compact ('title', 'brand'), 'admin');
    }
     public function edit($vars){
       extract ($vars);

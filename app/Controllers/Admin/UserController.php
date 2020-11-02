@@ -41,8 +41,11 @@ class UserController extends Controller{
    public function show($vars){
       extract ($vars);
       $user = (new User())->getById($id);
-      var_dump($user);
-      
+      // var_dump($user);
+      $roles = Role::all();
+      $title ='Show User';
+      $this->view-> render('admin/users/show', 
+      compact ('title', 'user', 'roles'), 'admin');
         
    }
    public function edit($vars){

@@ -34,10 +34,10 @@ class SignupController extends Controller{
     {
         $request = new Request();
         $password = $request->password;
-        $confirmpassword = $request->confirmpassword;
+        $confirmpassword = $request->confirm_password;
         
         if (self::is_valid_passwords($password, $confirmpassword)){
-            list($first_name, $last_name,$phone_number, $domain) = explode('@', $request->email);
+            list($first_name, $domain) = explode('@', $request->email);
             $hash = password_hash($password, PASSWORD_BCRYPT, $this->costs);
             (new User())::save([    
                "first_name"=>$request->first_name,  

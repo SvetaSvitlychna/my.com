@@ -52,8 +52,10 @@ class CategoryController extends Controller
    }   
    public function show($vars){
       extract ($vars);
+      $title ='Show Category';
       $category = (new Category())->getById($id);
-      var_dump($category);
+      $picture = (new Picture())->getById($id);
+      $this->view->render('admin/categories/show', compact ('title', 'category', 'picture'), 'admin');
    }
    public function edit($vars){
       extract ($vars);

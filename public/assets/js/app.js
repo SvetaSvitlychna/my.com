@@ -39,8 +39,8 @@ static getStorageItem (key){
 //     }
 // }
 class Product {
-    makeModel(newproduct){
-        return newproduct.map(item => {
+    makeModel(products){
+        return products.map(item => {
             const name= item.name;
             const price =item.price;
             const id= item.id;
@@ -407,7 +407,7 @@ const app =new App();
     `${navbarNav('', '/', 'fa-home', 'Home')}
     ${navbarNav('','/about','fa-book-open', 'About' )}
     ${navbarNav('','/catalog', 'fa-blog','Catalog')}
-    ${navbarNav('','/registr', 'fa-address-card','Sign Up')}`;
+    ${navbarNav('','/signup', 'fa-address-card','Sign Up')}`;
 
 
     document.querySelector('.footer-service').innerHTML =
@@ -424,9 +424,9 @@ const app =new App();
     ${footerContact('viber','','fab fa-viber', '+38 000 111 11 11')}
     ${footerContact('telegram','','fab fa-telegram', '+38 000 111 11 11')}`;
 
-    app.fetchData("newproduct", new Product());
-    app.makeShowcase(Storage.getStorageItem("product"));
-    app.addToCarts();
+    app.fetchData("products", new Product());
+    app.makeShowCase(Storage.getStorageItem("products"));
+    app.addToCart();
     app.renderCart();
     app.renderCategory(); 
     
