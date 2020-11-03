@@ -6004,3 +6004,9 @@ Stack trace:
 [02-Nov-2020 20:02:37 Europe/Kiev] PHP Notice:  Trying to get property 'id' of non-object in C:\xampp\htdocs\my.com\app\Views\admin\products\show.php on line 61
 [02-Nov-2020 20:03:37 Europe/Kiev] PHP Notice:  Undefined variable: pictures in C:\xampp\htdocs\my.com\app\Views\admin\products\show.php on line 61
 [02-Nov-2020 20:03:37 Europe/Kiev] PHP Notice:  Trying to get property 'id' of non-object in C:\xampp\htdocs\my.com\app\Views\admin\products\show.php on line 61
+[03-Nov-2020 17:45:49 Europe/Kiev] PHP Parse error:  syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST) in C:\xampp\htdocs\my.com\app\Models\Catalog.php on line 22
+[03-Nov-2020 18:28:24 Europe/Kiev] PHP Notice:  compact(): Undefined variable: categories in C:\xampp\htdocs\my.com\app\Controllers\CatalogController.php on line 13
+[03-Nov-2020 18:28:24 Europe/Kiev] PHP Notice:  compact(): Undefined variable: products in C:\xampp\htdocs\my.com\app\Controllers\CatalogController.php on line 13
+[03-Nov-2020 18:28:24 Europe/Kiev] PHP Notice:  Undefined variable: categories in C:\xampp\htdocs\my.com\app\Views\layouts\partials\_filter.php on line 6
+[03-Nov-2020 18:28:24 Europe/Kiev] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\my.com\app\Views\layouts\partials\_filter.php on line 6
+[03-Nov-2020 18:28:41 Europe/Kiev] PHP Notice:  compact(): Undefined variable: products in C:\xampp\htdocs\my.com\app\Controllers\CatalogController.php on line 13

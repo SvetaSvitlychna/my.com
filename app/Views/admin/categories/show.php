@@ -27,10 +27,7 @@
             
                     <img  class="card-img-bottom" 
                     src="<?php ($category->id === $pictures->id); ?>"/> 
-                   
-                   
-                   
-                
+                                
             </div>
         
           </form>

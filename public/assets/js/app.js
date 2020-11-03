@@ -1,19 +1,19 @@
 
 'use strict';
 class Storage{
-    static saveProduct(newproduct){
-        localStorage.setItem('newproduct',JSON.stringify(newproduct));
+    static saveProduct(products){
+        localStorage.setItem('products',JSON.stringify(products));
     }
     static saveStorageItem(key, item){
         localStorage.setItem(key, JSON.stringify(item));
     }
     static getProduct(id){
-        let newproduct = JSON.parse(localStorage.getItem('newproduct'));
-        return newproduct.find(product=>product.id===+(id));
+        let products = JSON.parse(localStorage.getItem('products'));
+        return products.find(product=>product.id===+(id));
     }
     static getProducts(){
-        let newproduct = JSON.parse(localStorage.getItem('newproduct'));
-        return newproduct;
+        let products = JSON.parse(localStorage.getItem('products'));
+        return products;
     }
     static saveCart(cart){
     localStorage.setItem("basket", JSON.stringify(cart));
@@ -173,27 +173,27 @@ makeLiGroup = (group,ulClass, header='')=>{
     </ul>`;
 }
 
-makeShowCase(newproduct){
-    if (!document.querySelector('.showcase')){
-        return;
-    }
-    let result = '';
-newproduct.forEach(item=> {result+=this.createProductMarkUp(item);
-});
-document.querySelector('.showcase').innerHTML = result;
-}
-
-// makeShowCase(products){
-//   let result = '';
-//  products.forEach(item=>{
-//     result+= this.createProductMarkUp(item);
+// makeShowCase(newproduct){
+//     if (!document.querySelector('.showcase')){
+//         return;
+//     }
+//     let result = '';
+// newproduct.forEach(item=> {result+=this.createProductMarkUp(item);
 // });
-//   document.querySelector('.showcase').innerHTML = result;
-//  }
+// document.querySelector('.showcase').innerHTML = result;
+// }
+
+makeShowCase(products){
+  let result = '';
+ products.forEach(item=>{
+    result+= this.createProductMarkUp(item);
+});
+  document.querySelector('.showcase').innerHTML = result;
+ }
 createProductMarkUp(data){
     return`
     <div  class="col-md-3 col-xl-3 col-lg-4 col-sm-6 cartItem">
-       <div class="newproduct text-center" data-id="${data.id}">
+       <div class="product text-center" data-id="${data.id}">
           <div class="position-relative mb-3">
             <a href="detail.html" class="d-block">
              <img src="${data.image}" alt="${data.name}" class="img-fluid w-100 product-img">
@@ -213,7 +213,7 @@ addToCart(){
     const addToCartButtons = [...document.querySelectorAll(".add-to-cart")];
         addToCartButtons.forEach(button=> {
            button.addEventListener('click',event=>{
-               let product = this.getProduct(event.target.closest('.newproduct').getAttribute('data-id'));
+               let product = this.getProduct(event.target.closest('.product').getAttribute('data-id'));
                let exist = this.cart.some(elem =>elem.id === product.id);
                if (exist){
                    this.cart.forEach(elem =>{

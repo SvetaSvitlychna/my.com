@@ -55,7 +55,7 @@
         </section>
 </div>
 <div class="collections">
-    <section class="pt-5 categories">
+    <section class="pt-5">
         <header class="text-center">
             <p class="small text-muted small text-uppercase mb-1">Carefully created collections</p>
             <h2 class="h5 text-uppercase mb-4">Browse our categories</h2>
@@ -68,7 +68,7 @@
             alt=""><strong class="category-item category-item-title"
              data-category ="bicycle" >Bicycle</strong></a>
         </div>
-        <!-- <div class="col1-md-3">
+        <div class="col1-md-3">
             <a class="category-item mb-4"  data-category ="accessories" href="#"><img class="img-fluid" src="images/categkids.jpg" alt=""><strong class="category-item category-item-title " data-category ="kids">Kids</strong></a>
         </div>  -->
         <!-- <div class="col1-md-3">   

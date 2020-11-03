@@ -56,6 +56,8 @@ $router->get('' , 'HomeController@index');
 
 
 $router->get('api/products','HomeController@getProducts');
+$router->get('api/products','CatalogController@getProducts');
+$router->get('api/catalog','CatalogController@getProducts');
 $router->get('api/categories','HomeController@getCategories');
 //  $router->get('api/shop/{id}', 'HomeController@getProduct');
 //  $router->get('api/product/{id}', 'HomeController@getProductItem');
